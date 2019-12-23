@@ -1,0 +1,103 @@
+<layout name="Public/layout"/>
+{:jumps($infos['authority'],CONTROLLER_NAME)}
+
+        <!--主要区域开始-->
+        <div id="main">            
+
+            <form action="__SELF__" method="post" class="main_form">
+                    <input type="hidden" name="id" value='{$info.id}'/>
+                    <div class="text_info clearfix"><span>姓名：</span></div>
+                    <div class="input_info">
+                        <input type="text" value="{$info['nickname']}" name='nickname'/>
+                        <span class="required">*</span>
+                        <div class="validate_msg_long ">20长度以内的汉字、字母、数字的组合</div>
+                    </div>
+                    <div class="text_info clearfix"><span>账号：</span></div>
+                    <div class="input_info"><input type="text" readonly="readonly" class="readonly" value="{$info.username}"  name='username'/></div>
+
+
+                    <div class="text_info clearfix"><span>密码：</span></div>
+                    <div class="input_info">
+                        <input type="password" class="width200" value="{$info.password}" name='password'/>
+                        <span class="required">*</span>
+                        <div class="validate_msg_medium ">20长度以内的汉字、字母、数字的组合</div>
+                    </div>
+                    
+                    <div class="text_info clearfix"><span>电话：</span></div>
+                    <div class="input_info">
+                        <input type="text" value="{$info.tel}"  name='tel'/>
+                        <span class="required">*</span>
+                        <div class="validate_msg_long ">正确的电话号码格式：手机或固话</div>
+                    </div>
+                    
+                    <div class="text_info clearfix"><span>Email：</span></div>
+                    <div class="input_info">
+                        <input type="text" class="width200" value="{$info.email}" name='email'/>
+                        <span class="required">*</span>
+                        <div class="validate_msg_medium ">50长度以内，正确的 email 格式</div>
+                    </div>
+                    
+                    <div class="text_info clearfix"><span>角色：</span></div>
+                    <div class="input_info_high">
+                        <div class="input_info_scroll">
+                            <ul>
+<!--遍历权限-->
+<volist name='role' id='vo'>
+                        <li><input type="checkbox" value='{$vo.id}' name='role_id[]'
+                        <php>
+                            if( strstr ($info['role_name'],$vo['role_name']) ){
+                                echo 'checked';
+                            }
+                        </php>          
+                        />{$vo.role_name}</li>   
+</volist>  
+                            </ul>
+                        </div>
+                        <span class="required">*</span>
+                        <div class="validate_msg_tiny ">至少选择一个</div>
+                    </div>
+                    <div class="button_info clearfix">
+                        <input type="button" value="保存" class="btn_save" onclick="send()" />
+                        <input type="button" value="取消" class="btn_save" />
+                    </div>
+                </form>  
+        </div>
+        <!--主要区域结束-->
+
+<script type="text/javascript">
+    $(function(){
+        //点击之后的图标
+        $('.admin_off').addClass('admin_on').removeClass('admin_off');
+    });  
+</script>
+
+<script type="text/javascript">
+function send(){
+
+                $.ajax({
+                    url: '__SELF__',
+                    type: 'post',
+                    dataType:'json',
+                    data: $(".main_form").serializeArray(),
+                    success: function(data) {
+
+                        //判断是否修改成功！
+                        if(data.status==0){
+                            layer.msg(data.info,{icon: 5});
+                        }else{
+                            layer.msg(data.info,{icon: 6});
+
+                            //延迟跳转
+                            setTimeout(function () {
+                                location.href = "{:U('Admin/index')}";
+                            }, {:C('AJAX_TIME')});
+
+
+                        }
+
+                    }
+                });
+
+            
+}
+</script>

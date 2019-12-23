@@ -1,0 +1,197 @@
+<layout name="Public/layout"/>
+{:jumps($infos['authority'],CONTROLLER_NAME)}	
+
+        <script language="javascript" type="text/javascript">
+            //显示角色详细信息
+            function showDetail(flag, a) {
+                var detailDiv = a.parentNode.getElementsByTagName("div")[0];
+                if (flag) {
+                    detailDiv.style.display = "block";
+                }
+                else
+                    detailDiv.style.display = "none";
+            }
+
+            //删除
+            function deleteAdmin() {
+                var r = window.confirm("确定要删除此管理员吗？");
+                document.getElementById("operate_result_info").style.display = "block";
+            }
+            //全选
+            function selectAdmins(inputObj) {
+                var inputArray = document.getElementById("datalist").getElementsByTagName("input");
+                for (var i = 1; i < inputArray.length; i++) {
+                    if (inputArray[i].type == "checkbox") {
+                        inputArray[i].checked = inputObj.checked;
+                    }
+                }
+            }
+        </script>       
+ 
+        <!--主要区域开始-->
+        <div id="main">
+            <form action="__SELF__" method="get" id="search">
+                <!--查询-->
+                <div class="search_add">
+                    <div>
+                        角色：
+                        <select id="selModules" class="select_search" name='role_name'>
+                            <option value=''>全部</option>
+<!--遍历角色-->
+<volist name='role' id='vo'>
+
+       <option value='{$vo.role_name}'
+<if condition="I('get.role_name') eq $vo['role_name'] ">
+    selected
+    <else />
+</if>               
+               >{$vo.role_name}</option>                         
+</volist>                            
+
+                        </select>
+                    </div>
+                    
+                    <div>手机：<input type="text" class="text_search width100" name='tel' value="{:I('get.tel')}"/></div>
+                    
+                    <div>姓名：<input type="text" class="text_search width70" name='nickname' value="{:I('get.nickname')}"/></div>
+                    
+                    <div>用户名：<input type="text" class="text_search width70" name='username' value="{:I('get.username')}"/></div>
+                    <div>邮箱：<input type="text" class="text_search width80" name='email' value="{:I('get.email')}"/></div>
+                    
+                    <div><input type="button" value="搜索" class="btn_search" id="btn_search" onclick="search()"/></div>
+                    
+<!--                    <input type="button" value="密码重置" class="btn_add" onclick="resetPwd();" />-->
+                    <input type="button" value="增加" class="btn_add" onclick="location.href='add.html';" />
+                </div>
+            </form>
+            
+            
+                <!--数据区域：用表格展示数据-->     
+                <div id="data">            
+                    <table id="datalist">
+                        <tr>
+<!--                            <th class="th_select_all">
+                                <input type="checkbox" onclick="selectAdmins(this);" />
+                                <span>全选</span>
+                            </th>-->
+                            <th>管理员ID</th>
+                            <th>姓名</th>
+                            <th>登录名</th>
+                            <th>电话</th>
+                            <th>电子邮件</th>
+                            <th>授权日期</th>
+                            <th class="width100">拥有角色</th>
+                            <th></th>
+                        </tr>   
+                        
+                     
+<volist name="res['res']" id='vo' empty="$empty">
+
+                        <tr>
+<!--                            <td><input type="checkbox" /></td>-->
+                            <td>{$vo.id}</td>
+                            <td>{$vo.nickname}</td>
+                            <td>{$vo.username}</td>
+                            <td>{$vo.tel}</td>
+                            <td>{$vo.email}</td>
+                            <td>{:date('Y-m-d',$vo['create_time'])}</td>
+                            <td>
+                                <a class="summary"  onmouseover="showDetail(true,this);" onmouseout="showDetail(false,this);">
+                                    {:mb_substr($vo['role_name'],0,4,'utf-8')}...
+                                </a>
+                                
+                                <!--浮动的详细信息-->
+                                <div class="detail_info">
+                                    {$vo.role_name}
+                                </div>
+                            </td>
+                            <td class="td_modi">
+                                <input type="button" value="修改" class="btn_modify" onclick=" location.href='__CONTROLLER__/edit/id/{$vo.id}' " />
+                                <input type="button" value="删除" class="btn_delete" onclick="deletes('__CONTROLLER__/delete/id/{$vo.id}');" />
+                            </td>
+                        </tr>
+</volist>
+                        
+
+                    </table>
+                </div>
+                
+                <!--分页-->
+                <div id="pages">
+                    {$res['page']}
+                </div>  
+                
+            
+        </div>
+        <!--主要区域结束-->
+
+<script type="text/javascript">
+    //搜索效果
+    function search(){
+        layer.load(2); //加载
+        setTimeout(function(){
+            $('#search').submit();
+        },{:C('SEARCH_TIME')});
+        
+    }
+    
+    //下拉框提交
+    $(function(){
+        $('#selModules').change(function(){
+            $('#search').submit();
+        });
+    });
+
+    //键盘事件    
+    $(document).keydown(function(event){ 
+        if(event.keyCode == 13){
+//            alert(event.keyCode); 
+            search();
+        }            
+                    
+    });     
+
+    
+    //删除
+    function deletes(obj){
+      
+    layer.confirm('你确定真的要删除此用户？', {icon: 3, title:'提示'}, function(index){
+    if(index){    
+        
+        $.get(obj, function(data){
+            
+            //判断是否删除成功！
+            if(data.status==0){
+                layer.msg(data.info,{icon: 5});
+            }else{
+                layer.msg(data.info,{icon: 6});
+
+                //延迟跳转
+                setTimeout(function () {
+                    location.href = "{:U('Admin/index')}";
+                }, {:C('AJAX_TIME')});
+
+            }
+            
+        });
+        
+        
+    }  
+      layer.close(index);
+    });    
+        
+    }    
+    
+</script> 
+
+<style type="text/css">
+    .empty{
+        font-weight:bold;
+    }
+</style>
+<script type="text/javascript">
+    $(function(){
+        //点击之后的图标
+        $('.admin_off').addClass('admin_on').removeClass('admin_off');
+    });  
+</script>

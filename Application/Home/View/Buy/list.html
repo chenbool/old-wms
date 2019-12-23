@@ -1,0 +1,275 @@
+<layout name="Public/layout"/>
+{:jumps($infos['authority'],CONTROLLER_NAME)}
+
+        <!--主要区域开始-->
+        <div id="main">
+            <form action="__SELF__" method="get" id="search">
+                
+                <!--查询-->
+                <div class="search_add">                        
+                    <div>货号：<input type="text" class="text_search width130" value="{:I('get.sn')}" name='sn'/></div>                            
+                    <div>名称：<input type="text" class="width110 text_search" value="{:I('get.name')}" name='name'/></div>
+
+<div>
+                        排序：
+                        <select class="select_search" name='order'>
+                            <option value="id asc">默认</option>
+                            <option value="price asc" <php> if( I('get.order')=='price asc' ){ echo 'selected';} </php> >  ↑ 价格从低到高 </option>                        
+                            <option value="price desc" <php> if( I('get.order')=='price desc' ){ echo 'selected';} </php> > ↓ 价格从高到低 </option>
+                            <option value="count asc" <php> if( I('get.order')=='count asc' ){ echo 'selected';} </php> >  ↑ 库存从低到高 </option>                        
+                            <option value="count desc" <php> if( I('get.order')=='count desc' ){ echo 'selected';} </php> > ↓ 库存从高到低 </option> 
+                            <option value="time asc" <php> if( I('get.order')=='time asc' ){ echo 'selected';} </php> >   ↑ 日期从低到高 </option>                        
+                            <option value="time desc" <php> if( I('get.order')=='time desc' ){ echo 'selected';} </php> >  ↓ 日期从高到低 </option> 
+                        </select>
+</div>
+
+<div>
+                        品牌：
+                        <select class="select_search" name='brand' id='status'>
+                            <option value="">全部</option>
+<!--遍历品牌-->                            
+<volist name="brand" id="vo">
+                            <option value="{$vo.id}" <php> if( I('get.brand')==$vo['id'] ){ echo 'selected';} </php>  >{$vo.name}</option>
+</volist>                            
+                            
+                        </select>
+</div>
+
+                    
+<div>
+                        类型：
+                        <select class="select_search" name='category'>
+                            <option value="">全部</option>
+<!--遍历类型-->                            
+<volist name="category" id="vo">
+                            <option value="{$vo.id}" <php> if( I('get.category')==$vo['id'] ){ echo 'selected';} </php>  >{$vo.name}</option>
+</volist>                            
+                            
+                        </select>
+</div>
+                    
+                    
+                    <input type="button" value="增加" class="btn_add" onclick="location.href='__CONTROLLER__/add';" />
+                    
+                    <div style='margin:5px 0;display:block; '>
+                        <div>
+                            价格：<input type="text" class="width70 text_search" value="{:I('get.start_price')}" name='start_price'/>
+                            -
+                            <input type="text" class="width70 text_search" value="{:I('get.end_price')}" name='end_price'/>
+                        </div>
+
+                        <div>
+                            库存：<input type="text" class="width70 text_search" value="{:I('get.start_stock')}" name='start_stock'/>
+                            -
+                            <input type="text" class="width70 text_search" value="{:I('get.end_stock')}" name='end_stock'/>
+                        </div>                        
+                        
+                        <div>
+                            日期：<input type="date" class="width130 text_search" value="{:I('get.start_time')}" name='start_time'/>
+                            -
+                            <input type="date" class="width130 text_search" value="{:I('get.end_time')}" name='end_time'/>
+                        </div>                            
+                        
+                    </div>
+                      
+                    
+                </div>  
+                
+                <!--搜索开始-->
+                    <div>
+                        <input type="button" value="搜索" class="btn_search" id="btn_search" onclick="search()"/>
+                        <button onclick="preview('data');" id="print">打印</button>
+                    </div> 
+
+                <!--搜索结束-->                
+                
+            </form>    
+
+                
+                <!--数据区域：用表格展示数据-->                   
+                <div id="data">            
+                    <table id="datalist">
+                        
+                    <tr>
+                        <th>商品ID</th>
+                        <th>货号</th>
+                        <th>名称</th>
+<!--                        <th>品牌</th>-->
+                        <th>类型</th>
+                        <th>购入数量</th>
+                        <th>剩余库存</th>
+                        <th>购入总价</th>
+                        <th>单价</th>
+                        <th>购入日期</th>                                                  
+                        <th>操作</th>
+                        <th></th>
+                    </tr>
+<!--开始遍历数据--> 
+<volist name="res['res']" id="vo" empty="$empty">                         
+                    <tr>
+                        <td>{$vo.id}</td>
+                        <td>{$vo.sn}</td>
+                        <td>{$vo.name}</td>
+<!--                        <td>{$vo.brand_name}</td>-->
+                        <td>{$vo.category_name}</td>
+                        <td>{$vo.sum}</td>
+                        <td>{:array_sum( explode(',',$vo['count']) ); }</td>
+                        <td>{$vo.total}</td>
+                        <td>{$vo.price}</td>
+                        <td>{:date('Y-m-d H:i:s',$vo['time'])}</td>                    
+                        <td class="td_modi">                          
+                            <input type="button" value="修改" class="btn_modify" onclick=" location.href='__CONTROLLER__/edit/id/{$vo.id}'; " />
+                            <input type="button" value="删除" class="btn_delete" onclick=" deletes( '__CONTROLLER__/delete/id/{$vo.id}' ); " />                   
+                        </td>
+                        <td><a href="__CONTROLLER__/detail/id/{$vo.id}">明细</a></td>
+                    </tr>
+                    
+</volist>   
+<!--遍历结束-->                    
+                  
+                </table>
+                <p>操作说明：<br />
+                1、创建则开通，记载创建时间；<br />
+                2、禁止后，则无法登陆；<br />
+                3、重新开通后，则可以正常使用；<br />
+                4、删除后，标示为删除，不能再开通、修改、删除；<br />
+                </div> 
+                
+                <!--分页-->
+                <div id="pages">
+                    {$res['page']}
+                </div>                    
+            
+        </div>
+        <!--主要区域结束-->
+
+
+<script type="text/javascript">
+    function search(){
+        layer.load(2); //加载
+        setTimeout(function(){
+            $('#search').submit();
+        },{:C('SEARCH_TIME')});
+        
+    }
+    
+    $(function(){
+        
+        $('#status').change(function(){
+            $('#search').submit();
+        });
+        
+        $('select').change(function(){
+            $('#search').submit();
+        });        
+    });
+    
+    //键盘事件    
+    $(document).keydown(function(event){ 
+        if(event.keyCode == 13){
+//            alert(event.keyCode); 
+            search();
+        }            
+                    
+    });      
+    
+    
+    
+    //禁止 开通
+    function set_status(obj){
+    
+        layer.confirm('你确定真的要修改用户状态吗？', {icon: 0, title:'提示'}, function(index){
+        if(index){
+        
+                $.ajax({
+                   type: "GET",
+                   url: obj,
+                   success: function(data){
+
+                            //判断修改加成功！
+                            if(data.status==0){
+                                layer.msg(data.info,{icon: 5});
+                            }else{
+                                layer.msg(data.info,{icon: 6});
+
+                                //延迟跳转
+                                setTimeout(function () {
+                                    location.href = "{:U('Account/index')}";
+                                }, {:C('AJAX_TIME')});
+
+                            }
+
+                   }
+                });      
+        
+//        layer.msg(obj);
+
+    }  
+      layer.close(index);
+    });
+
+    }
+    
+    
+    //删除
+    function deletes(obj){
+      
+    layer.confirm('你确定真的要删除此商品？', {icon: 3, title:'提示'}, function(index){
+    if(index){    
+        
+        $.get(obj, function(data){
+            
+            //判断是否删除成功！
+            if(data.status==0){
+                layer.msg(data.info,{icon: 5});
+            }else{
+                layer.msg(data.info,{icon: 6});
+
+                //延迟跳转
+                setTimeout(function () {
+                    location.href = "{:U('Goods/index')}";
+                }, {:C('AJAX_TIME')});
+
+            }
+            
+        });
+        
+        
+    }  
+      layer.close(index);
+    });    
+        
+    }
+    
+    
+</script> 
+<style type="text/css">
+    .empty{
+        font-weight:bold;
+    }
+</style>
+
+<script type="text/javascript">
+    $(function(){
+        //点击之后的图标
+        $('.buy_off').addClass('buy_on').removeClass('buy_off');
+    });  
+</script>
+
+<style type="text/css">
+    #print{
+        width:50px;
+        height:24px;
+    }
+</style>
+   <script type="text/javascript">
+       
+       function preview(id){
+           var sprnhtml=$('#'+id).html();   //获取区域内容
+           var selfhtml=$('body').html(); //获取当前页的html
+           $('body').html(sprnhtml);
+           window.print();
+           $('body').html(selfhtml);
+       }
+   </script>
+

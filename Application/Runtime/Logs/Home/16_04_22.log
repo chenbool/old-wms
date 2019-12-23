@@ -1,0 +1,1454 @@
+[ 2016-04-22T09:45:07+08:00 ] 127.0.0.1 /wms/index.php/Position
+ERR: 模板不存在:./Application/Home/View/Position/list.html
+
+[ 2016-04-22T09:53:47+08:00 ] 127.0.0.1 /wms/index.php/role_add.html
+ERR: 无法加载控制器:Role_add
+
+[ 2016-04-22T09:54:02+08:00 ] 127.0.0.1 /wms/index.php/role_add.html
+ERR: 无法加载控制器:Role_add
+
+[ 2016-04-22T09:54:05+08:00 ] 127.0.0.1 /wms/index.php/add.html
+ERR: 无法加载控制器:Add
+
+[ 2016-04-22T09:55:31+08:00 ] 127.0.0.1 /wms/index.php/add.html
+ERR: 无法加载控制器:Add
+
+[ 2016-04-22T10:26:02+08:00 ] 127.0.0.1 /wms/index.php/Position/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\PositionModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PositionModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_position` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_position` WHERE `name` = '职员' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_position` (`name`,`time`) VALUES ('职员','1461291962') [ RunTime:0.0312s ]
+
+[ 2016-04-22T10:26:29+08:00 ] 127.0.0.1 /wms/index.php/Position/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\PositionModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PositionModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_position` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_position` WHERE `name` = '职员' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-04-22T10:27:26+08:00 ] 127.0.0.1 /wms/index.php/Position/role_modi.html
+ERR: 非法操作:role_modi
+
+[ 2016-04-22T10:33:02+08:00 ] 127.0.0.1 /wms/index.php/role_modi.html
+ERR: 无法加载控制器:Role_modi
+
+[ 2016-04-22T10:36:41+08:00 ] 127.0.0.1 /wms/index.php/Position/edit/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\PositionModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PositionModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_position` [ RunTime:0.0196s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_position a WHERE a.id = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM wms_position a WHERE a.id = 1 LIMIT 0,7   [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Home\Model\StoreModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\StoreModel.class.php 第 89 行.
+SQL: SHOW COLUMNS FROM `wms_store` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: leader D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1303 行.
+
+[ 2016-04-22T10:37:26+08:00 ] 127.0.0.1 /wms/index.php/Position/edit/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\PositionModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PositionModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_position` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_position a WHERE a.id = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM wms_position a WHERE a.id = 1 LIMIT 0,7   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\StoreModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\StoreModel.class.php 第 89 行.
+SQL: SHOW COLUMNS FROM `wms_store` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: leader D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1303 行.
+
+[ 2016-04-22T10:37:32+08:00 ] 127.0.0.1 /wms/index.php/Position/edit/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\PositionModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PositionModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_position` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_position a WHERE a.id = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM wms_position a WHERE a.id = 1 LIMIT 0,7   [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Home\Model\StoreModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\StoreModel.class.php 第 89 行.
+SQL: SHOW COLUMNS FROM `wms_store` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: leader D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1303 行.
+
+[ 2016-04-22T10:37:42+08:00 ] 127.0.0.1 /wms/index.php/Position/edit/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\PositionModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PositionModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_position` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_position a WHERE a.id = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM wms_position a WHERE a.id = 1 LIMIT 0,7   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\StoreModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\StoreModel.class.php 第 89 行.
+SQL: SHOW COLUMNS FROM `wms_store` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: leader D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1303 行.
+
+[ 2016-04-22T10:37:43+08:00 ] 127.0.0.1 /wms/index.php/Position/edit/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\PositionModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PositionModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_position` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_position a WHERE a.id = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM wms_position a WHERE a.id = 1 LIMIT 0,7   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\StoreModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\StoreModel.class.php 第 89 行.
+SQL: SHOW COLUMNS FROM `wms_store` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: leader D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1303 行.
+
+[ 2016-04-22T10:37:44+08:00 ] 127.0.0.1 /wms/index.php/Position/edit/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\PositionModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PositionModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_position` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_position a WHERE a.id = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM wms_position a WHERE a.id = 1 LIMIT 0,7   [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Home\Model\StoreModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\StoreModel.class.php 第 89 行.
+SQL: SHOW COLUMNS FROM `wms_store` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: leader D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1303 行.
+
+[ 2016-04-22T10:37:45+08:00 ] 127.0.0.1 /wms/index.php/Position/edit/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [2048] Declaration of Home\Model\PositionModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PositionModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_position` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_position a WHERE a.id = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM wms_position a WHERE a.id = 1 LIMIT 0,7   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\StoreModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\StoreModel.class.php 第 89 行.
+SQL: SHOW COLUMNS FROM `wms_store` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: leader D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1303 行.
+
+[ 2016-04-22T10:37:46+08:00 ] 127.0.0.1 /wms/index.php/Position/edit/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\PositionModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PositionModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_position` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_position a WHERE a.id = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM wms_position a WHERE a.id = 1 LIMIT 0,7   [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Home\Model\StoreModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\StoreModel.class.php 第 89 行.
+SQL: SHOW COLUMNS FROM `wms_store` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: leader D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1303 行.
+
+[ 2016-04-22T10:38:23+08:00 ] 127.0.0.1 /wms/index.php/Position/edit/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Home\Model\PositionModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PositionModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_position` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_position a WHERE a.id = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM wms_position a WHERE a.id = 1 LIMIT 0,7   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `wms_position` SET `name`='店长' WHERE `id` = 1 [ RunTime:0.0110s ]
+
+[ 2016-04-22T10:38:31+08:00 ] 127.0.0.1 /wms/index.php/Position/edit/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\PositionModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PositionModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_position` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_position a WHERE a.id = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM wms_position a WHERE a.id = 2 LIMIT 0,7   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `wms_position` SET `name`='职员11' WHERE `id` = 2 [ RunTime:0.0156s ]
+
+[ 2016-04-22T10:38:37+08:00 ] 127.0.0.1 /wms/index.php/Position/edit/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\PositionModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PositionModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_position` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_position a WHERE a.id = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM wms_position a WHERE a.id = 2 LIMIT 0,7   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `wms_position` SET `name`='职员' WHERE `id` = 2 [ RunTime:0.0312s ]
+
+[ 2016-04-22T10:38:59+08:00 ] 127.0.0.1 /wms/index.php/Position/edit/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\PositionModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PositionModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_position` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_position a WHERE a.id = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM wms_position a WHERE a.id = 1 LIMIT 0,7   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `wms_position` SET `name`='店长' WHERE `id` = 1 [ RunTime:0.1796s ]
+
+[ 2016-04-22T10:39:03+08:00 ] 127.0.0.1 /wms/index.php/Position/edit/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+NOTIC: [2048] Declaration of Home\Model\PositionModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PositionModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_position` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_position a WHERE a.id = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM wms_position a WHERE a.id = 2 LIMIT 0,7   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `wms_position` SET `name`='职员' WHERE `id` = 2 [ RunTime:0.1634s ]
+
+[ 2016-04-22T11:08:56+08:00 ] 127.0.0.1 /wms/index.php/Position/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\PositionModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PositionModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_position` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_position a LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM wms_position a LIMIT 0,7   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T11:13:41+08:00 ] 127.0.0.1 /wms/index.php/Position/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\PositionModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PositionModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_position` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_position a LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM wms_position a LIMIT 0,7   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T11:14:41+08:00 ] 127.0.0.1 /wms/index.php/Position/delete/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Declaration of Home\Model\PositionModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PositionModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_position` [ RunTime:0.0030s ]
+SQL: DELETE FROM `wms_position` WHERE `id` = 2 [ RunTime:0.0120s ]
+
+[ 2016-04-22T12:00:04+08:00 ] 127.0.0.1 /wms/index.php/Account/edit/id/15
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\UserModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\UserModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_user` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_user a WHERE a.id = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM wms_user a LEFT JOIN wms_userinfo as b on a.id=b.id  WHERE a.id = 15 LIMIT 0,7   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: email D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `wms_userinfo` [ RunTime:0.0000s ]
+SQL: UPDATE `wms_userinfo` SET `id`='15',`no`='123',`tel`='123',`email`='1',`position`='干部',`sex`='男',`address`='1',`post`='233',`qq`='1222' WHERE `id` = 15 [ RunTime:0.1882s ]
+SQL: UPDATE `wms_user` SET `nickname`='布尔',`username`='a',`status`='0' WHERE `id` = 15 [ RunTime:0.0468s ]
+
+[ 2016-04-22T12:19:03+08:00 ] 127.0.0.1 /wms/index.php/Account/edit/id/15
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Declaration of Home\Model\UserModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\UserModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_user` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_user a WHERE a.id = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM wms_user a LEFT JOIN wms_userinfo as b on a.id=b.id  WHERE a.id = 15 LIMIT 0,7   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `wms_position` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name` FROM `wms_position`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: email D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `wms_userinfo` [ RunTime:0.0000s ]
+SQL: UPDATE `wms_userinfo` SET `id`='15',`no`='123',`tel`='123',`email`='1',`position`='1',`sex`='男',`address`='1',`post`='233',`qq`='1222' WHERE `id` = 15 [ RunTime:0.1560s ]
+SQL: UPDATE `wms_user` SET `nickname`='布尔',`username`='a',`status`='0' WHERE `id` = 15 [ RunTime:0.0156s ]
+
+[ 2016-04-22T12:22:21+08:00 ] 127.0.0.1 /wms/index.php/Account/edit/id/15
+ERR: 1054:Unknown column 'a.position' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM wms_user a LEFT JOIN wms_userinfo as b on a.id=b.id LEFT JOIN wms_position as c on a.position=b.id  WHERE a.id = 15 LIMIT 0,7  
+
+[ 2016-04-22T12:22:37+08:00 ] 127.0.0.1 /wms/index.php/Account/edit/id/15
+ERR: 1054:Unknown column 'a.position' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM wms_user a LEFT JOIN wms_userinfo as b on a.id=b.id LEFT JOIN wms_position as c on a.position=c.id  WHERE a.id = 15 LIMIT 0,7  
+
+[ 2016-04-22T12:22:38+08:00 ] 127.0.0.1 /wms/index.php/Account/edit/id/15
+ERR: 1054:Unknown column 'a.position' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM wms_user a LEFT JOIN wms_userinfo as b on a.id=b.id LEFT JOIN wms_position as c on a.position=c.id  WHERE a.id = 15 LIMIT 0,7  
+
+[ 2016-04-22T12:22:38+08:00 ] 127.0.0.1 /wms/index.php/Account/edit/id/15
+ERR: 1054:Unknown column 'a.position' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM wms_user a LEFT JOIN wms_userinfo as b on a.id=b.id LEFT JOIN wms_position as c on a.position=c.id  WHERE a.id = 15 LIMIT 0,7  
+
+[ 2016-04-22T12:22:49+08:00 ] 127.0.0.1 /wms/index.php/Account/index.html
+ERR: 1054:Unknown column 'a.position' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM wms_user a LEFT JOIN wms_userinfo as b on a.id=b.id LEFT JOIN wms_position as c on a.position=c.id  LIMIT 0,7  
+
+[ 2016-04-22T12:37:33+08:00 ] 127.0.0.1 /wms/index.php/bill/bill_list.html
+ERR: 无法加载控制器:Bill
+
+[ 2016-04-22T12:38:50+08:00 ] 127.0.0.1 /wms/index.php/report/report_list.html
+ERR: 无法加载控制器:Report
+
+[ 2016-04-22T12:38:52+08:00 ] 127.0.0.1 /wms/index.php/bill/bill_list.html
+ERR: 无法加载控制器:Bill
+
+[ 2016-04-22T12:59:28+08:00 ] 127.0.0.1 /wms/index.php/bill/bill_list.html
+ERR: 无法加载控制器:Bill
+
+[ 2016-04-22T13:02:34+08:00 ] 127.0.0.1 /wms/index.php/bill/bill_list.html
+ERR: 无法加载控制器:Bill
+
+[ 2016-04-22T13:10:16+08:00 ] 192.168.95.1 /wms/index.php/user/user_info.html
+ERR: 无法加载控制器:User
+
+[ 2016-04-22T13:10:16+08:00 ] 192.168.95.1 /wms/index.php/user/user_info.html
+ERR: 无法加载控制器:User
+
+[ 2016-04-22T13:18:36+08:00 ] 127.0.0.1 /wms/index.php/bill/bill_list.html
+ERR: 无法加载控制器:Bill
+
+[ 2016-04-22T13:21:37+08:00 ] 127.0.0.1 /wms/index.php/bill/bill_list.html
+ERR: 无法加载控制器:Bill
+
+[ 2016-04-22T13:22:24+08:00 ] 127.0.0.1 /wms/index.php/Goods/index.html
+ERR: 模板不存在:./Application/Home/View/Goods/list.html
+
+[ 2016-04-22T13:23:23+08:00 ] 127.0.0.1 /wms/index.php/Goods/index.html
+ERR: 模板不存在:./Application/Home/View/Goods/list.html
+
+[ 2016-04-22T13:25:50+08:00 ] 127.0.0.1 /wms/index.php/Goods/index.html
+ERR: 模板不存在:./Application/Home/View/Goods/list.html
+
+[ 2016-04-22T13:28:24+08:00 ] 127.0.0.1 /wms/index.php/Goods/index.html
+ERR: 模板不存在:./Application/Home/View/Goods/list.html
+
+[ 2016-04-22T13:37:31+08:00 ] 127.0.0.1 /wms/index.php/Account/index/position_name/%E8%81%8C%E5%91%98
+ERR: 1054:Unknown column 'c.name' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM wms_user a WHERE c.name = '职员' LIMIT 1  
+
+[ 2016-04-22T13:54:47+08:00 ] 127.0.0.1 /wms/index.php/Role/edit/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\PrivilegeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PrivilegeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_privilege` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`name` FROM `wms_privilege`  [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\RoleModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\RoleModel.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `wms_role` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_role a WHERE a.id = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.*,GROUP_CONCAT(c.name) as names FROM wms_role a LEFT JOIN wms_role_privilege as b on a.id=b.role_id LEFT JOIN wms_privilege as c on b.privliege_id=c.id  WHERE a.id = 1 GROUP BY a.id ORDER BY a.id asc LIMIT 0,7   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `wms_role` SET `role_name`='超级管理员' WHERE `id` = 1 [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `wms_role_privilege` [ RunTime:0.0120s ]
+SQL: DELETE FROM `wms_role_privilege` WHERE `role_id` = 1 [ RunTime:0.0120s ]
+SQL: INSERT INTO `wms_role_privilege` (`role_id`,`privliege_id`) VALUES ('1','1') [ RunTime:0.0100s ]
+SQL: INSERT INTO `wms_role_privilege` (`role_id`,`privliege_id`) VALUES ('1','2') [ RunTime:0.0210s ]
+SQL: INSERT INTO `wms_role_privilege` (`role_id`,`privliege_id`) VALUES ('1','3') [ RunTime:0.0120s ]
+
+[ 2016-04-22T13:56:00+08:00 ] 127.0.0.1 /wms/index.php/Goods/add
+ERR: 模板不存在:./Application/Home/View/Goods/add.html
+
+[ 2016-04-22T14:02:05+08:00 ] 127.0.0.1 /wms/index.php/Store/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\StoreModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\StoreModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_store` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_store` WHERE `name` = '苏州市高新区木渎分店' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_store` (`name`,`leader`,`tel`,`create_time`,`address`,`desc`) VALUES ('苏州市高新区木渎分店','李先生','0512-5689102','2016-04-22','苏州市高新区木渎分店','苏州市高新区木渎分店') [ RunTime:0.0392s ]
+
+[ 2016-04-22T14:43:55+08:00 ] 127.0.0.1 /wms/index.php/Category/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2016-04-22T14:45:16+08:00 ] 127.0.0.1 /wms/index.php/Category/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2016-04-22T14:47:14+08:00 ] 127.0.0.1 /wms/index.php/Category/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2016-04-22T14:47:15+08:00 ] 127.0.0.1 /wms/index.php/Category/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2016-04-22T14:47:26+08:00 ] 127.0.0.1 /wms/index.php/Category/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_category` WHERE `name` = '鞋子' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_category` (`name`) VALUES ('鞋子') [ RunTime:0.0170s ]
+
+[ 2016-04-22T14:47:28+08:00 ] 127.0.0.1 /wms/index.php/Category/index.html
+ERR: Think\Model:store方法不存在！
+
+[ 2016-04-22T14:51:17+08:00 ] 127.0.0.1 /wms/index.php/Category/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_category` WHERE `name` = '衣服' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_category` (`name`,`time`) VALUES ('衣服','1461307877') [ RunTime:0.3014s ]
+
+[ 2016-04-22T15:03:00+08:00 ] 127.0.0.1 /wms/index.php/Category/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_category` WHERE `name` = '袜子' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_category` (`name`,`time`) VALUES ('袜子','1461308580') [ RunTime:0.1742s ]
+
+[ 2016-04-22T15:03:08+08:00 ] 127.0.0.1 /wms/index.php/Goods/index.html
+ERR: Think\Model:role方法不存在！
+
+[ 2016-04-22T15:03:11+08:00 ] 127.0.0.1 /wms/index.php/Goods/index.html
+ERR: Think\Model:role方法不存在！
+
+[ 2016-04-22T15:03:30+08:00 ] 127.0.0.1 /wms/index.php/Goods/index.html
+ERR: Think\Model:role方法不存在！
+
+[ 2016-04-22T15:05:12+08:00 ] 192.168.95.1 /wms/index.php/Goods/index.html
+ERR: Think\Model:role方法不存在！
+
+[ 2016-04-22T15:08:48+08:00 ] 127.0.0.1 /wms/index.php/Category/edit/id/1
+ERR: Think\Model:store方法不存在！
+
+[ 2016-04-22T15:25:22+08:00 ] 127.0.0.1 /wms/index.php/Category/edit/id/1
+ERR: Think\Model:store方法不存在！
+
+[ 2016-04-22T15:26:08+08:00 ] 127.0.0.1 /wms/index.php/Category/edit/id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wms_category` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wms_category` WHERE `id` = 3 ORDER BY id asc LIMIT 0,7   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\StoreModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\StoreModel.class.php 第 89 行.
+SQL: SHOW COLUMNS FROM `wms_store` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: leader D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1303 行.
+
+[ 2016-04-22T15:27:53+08:00 ] 127.0.0.1 /wms/index.php/Category/edit/id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wms_category` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wms_category` WHERE `id` = 3 ORDER BY id asc LIMIT 0,7   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\StoreModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\StoreModel.class.php 第 89 行.
+SQL: SHOW COLUMNS FROM `wms_store` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: leader D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1303 行.
+
+[ 2016-04-22T15:28:12+08:00 ] 127.0.0.1 /wms/index.php/Category/edit/id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wms_category` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wms_category` WHERE `id` = 3 ORDER BY id asc LIMIT 0,7   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `wms_category` SET `name`='袜子1' WHERE `id` = 3 [ RunTime:0.0110s ]
+
+[ 2016-04-22T15:28:48+08:00 ] 127.0.0.1 /wms/index.php/Category/edit/id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wms_category` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wms_category` WHERE `id` = 3 ORDER BY id asc LIMIT 0,7   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `wms_category` SET `name`='袜子' WHERE `id` = 3 [ RunTime:0.0372s ]
+
+[ 2016-04-22T15:28:56+08:00 ] 127.0.0.1 /wms/index.php/Category/edit/id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wms_category` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wms_category` WHERE `id` = 3 ORDER BY id asc LIMIT 0,7   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `wms_category` SET `name`='袜子1' WHERE `id` = 3 [ RunTime:0.0120s ]
+
+[ 2016-04-22T15:29:01+08:00 ] 127.0.0.1 /wms/index.php/Category/edit/id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wms_category` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wms_category` WHERE `id` = 3 ORDER BY id asc LIMIT 0,7   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `wms_category` SET `name`='袜子' WHERE `id` = 3 [ RunTime:0.1816s ]
+
+[ 2016-04-22T15:31:53+08:00 ] 127.0.0.1 /wms/index.php/Category/delete/id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0040s ]
+SQL: DELETE FROM `wms_category` WHERE `id` = 3 [ RunTime:0.0310s ]
+
+[ 2016-04-22T15:34:43+08:00 ] 127.0.0.1 /wms/index.php/Category/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_category` WHERE `name` = '男鞋' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_category` (`name`,`time`) VALUES ('男鞋','1461310483') [ RunTime:0.0240s ]
+
+[ 2016-04-22T15:34:52+08:00 ] 127.0.0.1 /wms/index.php/Category/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_category` WHERE `name` = '女鞋' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_category` (`name`,`time`) VALUES ('女鞋','1461310492') [ RunTime:0.0330s ]
+
+[ 2016-04-22T15:36:01+08:00 ] 127.0.0.1 /wms/index.php/Category/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_category` WHERE `name` = '运动鞋' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_category` (`name`,`time`) VALUES ('运动鞋','1461310561') [ RunTime:0.0312s ]
+
+[ 2016-04-22T15:36:12+08:00 ] 127.0.0.1 /wms/index.php/Category/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_category` WHERE `name` = '休闲鞋' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_category` (`name`,`time`) VALUES ('休闲鞋','1461310572') [ RunTime:0.0462s ]
+
+[ 2016-04-22T15:38:06+08:00 ] 127.0.0.1 /wms/index.php/Category/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_category` WHERE `name` = '帆布鞋' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_category` (`name`,`time`) VALUES ('帆布鞋','1461310686') [ RunTime:0.0150s ]
+
+[ 2016-04-22T15:39:19+08:00 ] 127.0.0.1 /wms/index.php/Category/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0196s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_category` WHERE `name` = '皮鞋' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_category` (`name`,`time`) VALUES ('皮鞋','1461310759') [ RunTime:0.0180s ]
+
+[ 2016-04-22T15:49:54+08:00 ] 127.0.0.1 /wms/index.php/Goods/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name` FROM `wms_category`  [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\RoleModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\RoleModel.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `wms_role` [ RunTime:0.0196s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2016-04-22T15:49:55+08:00 ] 127.0.0.1 /wms/index.php/Goods/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`name` FROM `wms_category`  [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\RoleModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\RoleModel.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `wms_role` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2016-04-22T15:49:56+08:00 ] 127.0.0.1 /wms/index.php/Goods/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`name` FROM `wms_category`  [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\RoleModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\RoleModel.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `wms_role` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2016-04-22T15:49:58+08:00 ] 127.0.0.1 /wms/index.php/Goods/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0176s ]
+SQL: SELECT `id`,`name` FROM `wms_category`  [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\RoleModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\RoleModel.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `wms_role` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2016-04-22T15:49:59+08:00 ] 127.0.0.1 /wms/index.php/Goods/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name` FROM `wms_category`  [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\RoleModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\RoleModel.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `wms_role` [ RunTime:0.0196s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2016-04-22T15:49:59+08:00 ] 127.0.0.1 /wms/index.php/Goods/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`name` FROM `wms_category`  [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\RoleModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\RoleModel.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `wms_role` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2016-04-22T15:50:04+08:00 ] 127.0.0.1 /wms/index.php/report/report_list.html
+ERR: 无法加载控制器:Report
+
+[ 2016-04-22T15:57:00+08:00 ] 127.0.0.1 /wms/index.php/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2016-04-22T15:57:01+08:00 ] 127.0.0.1 /wms/index.php/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2016-04-22T15:57:17+08:00 ] 127.0.0.1 /wms/index.php/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\BrandModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\BrandModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_brand` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2016-04-22T15:57:19+08:00 ] 127.0.0.1 /wms/index.php/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\BrandModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\BrandModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_brand` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2016-04-22T15:58:39+08:00 ] 127.0.0.1 /wms/index.php/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\BrandModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\BrandModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_brand` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_brand` WHERE `name` = '特步' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1054:Unknown column 'time' in 'field list'
+ [ SQL语句 ] : INSERT INTO `wms_brand` (`name`,`time`) VALUES ('特步','1461311919')
+ERR: 1054:Unknown column 'time' in 'field list'
+ [ SQL语句 ] : INSERT INTO `wms_brand` (`name`,`time`) VALUES ('特步','1461311919')
+
+[ 2016-04-22T15:58:55+08:00 ] 127.0.0.1 /wms/index.php/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\BrandModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\BrandModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_brand` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2016-04-22T15:59:00+08:00 ] 127.0.0.1 /wms/index.php/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\BrandModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\BrandModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_brand` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_brand` WHERE `name` = '特步' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1054:Unknown column 'time' in 'field list'
+ [ SQL语句 ] : INSERT INTO `wms_brand` (`name`,`time`) VALUES ('特步','1461311940')
+ERR: 1054:Unknown column 'time' in 'field list'
+ [ SQL语句 ] : INSERT INTO `wms_brand` (`name`,`time`) VALUES ('特步','1461311940')
+
+[ 2016-04-22T15:59:01+08:00 ] 127.0.0.1 /wms/index.php/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Declaration of Home\Model\BrandModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\BrandModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_brand` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_brand` WHERE `name` = '特步' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1054:Unknown column 'time' in 'field list'
+ [ SQL语句 ] : INSERT INTO `wms_brand` (`name`,`time`) VALUES ('特步','1461311941')
+ERR: 1054:Unknown column 'time' in 'field list'
+ [ SQL语句 ] : INSERT INTO `wms_brand` (`name`,`time`) VALUES ('特步','1461311941')
+
+[ 2016-04-22T15:59:01+08:00 ] 127.0.0.1 /wms/index.php/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\BrandModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\BrandModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_brand` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_brand` WHERE `name` = '特步' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1054:Unknown column 'time' in 'field list'
+ [ SQL语句 ] : INSERT INTO `wms_brand` (`name`,`time`) VALUES ('特步','1461311941')
+ERR: 1054:Unknown column 'time' in 'field list'
+ [ SQL语句 ] : INSERT INTO `wms_brand` (`name`,`time`) VALUES ('特步','1461311941')
+
+[ 2016-04-22T15:59:01+08:00 ] 127.0.0.1 /wms/index.php/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\BrandModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\BrandModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_brand` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_brand` WHERE `name` = '特步' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1054:Unknown column 'time' in 'field list'
+ [ SQL语句 ] : INSERT INTO `wms_brand` (`name`,`time`) VALUES ('特步','1461311941')
+ERR: 1054:Unknown column 'time' in 'field list'
+ [ SQL语句 ] : INSERT INTO `wms_brand` (`name`,`time`) VALUES ('特步','1461311941')
+
+[ 2016-04-22T15:59:01+08:00 ] 127.0.0.1 /wms/index.php/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\BrandModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\BrandModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_brand` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_brand` WHERE `name` = '特步' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1054:Unknown column 'time' in 'field list'
+ [ SQL语句 ] : INSERT INTO `wms_brand` (`name`,`time`) VALUES ('特步','1461311941')
+ERR: 1054:Unknown column 'time' in 'field list'
+ [ SQL语句 ] : INSERT INTO `wms_brand` (`name`,`time`) VALUES ('特步','1461311941')
+
+[ 2016-04-22T16:00:03+08:00 ] 127.0.0.1 /wms/index.php/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\BrandModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\BrandModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_brand` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_brand` WHERE `name` = '特步' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1054:Unknown column 'time' in 'field list'
+ [ SQL语句 ] : INSERT INTO `wms_brand` (`name`,`time`) VALUES ('特步','1461312003')
+ERR: 1054:Unknown column 'time' in 'field list'
+ [ SQL语句 ] : INSERT INTO `wms_brand` (`name`,`time`) VALUES ('特步','1461312003')
+
+[ 2016-04-22T16:00:15+08:00 ] 127.0.0.1 /wms/index.php/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\BrandModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\BrandModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_brand` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_brand` WHERE `name` = '特步' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1054:Unknown column 'time' in 'field list'
+ [ SQL语句 ] : INSERT INTO `wms_brand` (`name`,`time`) VALUES ('特步','1461312015')
+ERR: 1054:Unknown column 'time' in 'field list'
+ [ SQL语句 ] : INSERT INTO `wms_brand` (`name`,`time`) VALUES ('特步','1461312015')
+
+[ 2016-04-22T16:01:09+08:00 ] 127.0.0.1 /wms/index.php/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+NOTIC: [2048] Declaration of Home\Model\BrandModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\BrandModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_brand` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_brand` WHERE `name` = '特步' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_brand` (`name`,`time`) VALUES ('特步','1461312069') [ RunTime:0.0226s ]
+
+[ 2016-04-22T16:03:03+08:00 ] 127.0.0.1 /wms/index.php/Brand/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\BrandModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\BrandModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_brand` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_brand` WHERE `name` = '耐克NIKE' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_brand` (`name`,`time`) VALUES ('耐克NIKE','1461312183') [ RunTime:0.0356s ]
+
+[ 2016-04-22T16:03:12+08:00 ] 127.0.0.1 /wms/index.php/Brand/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\BrandModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\BrandModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_brand` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_brand` WHERE `name` = '安踏' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_brand` (`name`,`time`) VALUES ('安踏','1461312192') [ RunTime:0.0440s ]
+
+[ 2016-04-22T16:03:21+08:00 ] 127.0.0.1 /wms/index.php/Brand/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\BrandModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\BrandModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_brand` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_brand` WHERE `name` = '贵人鸟' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_brand` (`name`,`time`) VALUES ('贵人鸟','1461312200') [ RunTime:0.2362s ]
+
+[ 2016-04-22T16:04:06+08:00 ] 127.0.0.1 /wms/index.php/Brand/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\BrandModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\BrandModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_brand` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_brand` WHERE `name` = '李宁' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_brand` (`name`,`time`) VALUES ('李宁','1461312246') [ RunTime:0.1528s ]
+
+[ 2016-04-22T16:04:12+08:00 ] 127.0.0.1 /wms/index.php/Brand/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\BrandModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\BrandModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_brand` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_brand` WHERE `name` = '乔丹' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_brand` (`name`,`time`) VALUES ('乔丹','1461312252') [ RunTime:0.0156s ]
+
+[ 2016-04-22T16:04:27+08:00 ] 127.0.0.1 /wms/index.php/Brand/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\BrandModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\BrandModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_brand` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_brand` WHERE `name` = 'erke/鸿星尔克' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_brand` (`name`,`time`) VALUES ('erke/鸿星尔克','1461312267') [ RunTime:0.0372s ]
+
+[ 2016-04-22T16:04:39+08:00 ] 127.0.0.1 /wms/index.php/Brand/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\BrandModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\BrandModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_brand` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_brand` WHERE `name` = '阿迪达斯' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_brand` (`name`,`time`) VALUES ('阿迪达斯','1461312279') [ RunTime:0.0320s ]
+
+[ 2016-04-22T16:05:03+08:00 ] 127.0.0.1 /wms/index.php/Brand/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\BrandModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\BrandModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_brand` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_brand` WHERE `name` = '361°' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_brand` (`name`,`time`) VALUES ('361°','1461312303') [ RunTime:0.0290s ]
+
+[ 2016-04-22T16:05:13+08:00 ] 127.0.0.1 /wms/index.php/Brand/edit/id/1
+ERR: Think\Model:category方法不存在！
+
+[ 2016-04-22T16:06:29+08:00 ] 127.0.0.1 /wms/index.php/Brand/edit/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2048] Declaration of Home\Model\BrandModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\BrandModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_brand` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wms_brand` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wms_brand` WHERE `id` = 1 ORDER BY id asc LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `wms_brand` SET `name`='XTEP/特步' WHERE `id` = 1 [ RunTime:0.0402s ]
+
+[ 2016-04-22T16:07:12+08:00 ] 127.0.0.1 /wms/index.php/Brand/edit/id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Declaration of Home\Model\BrandModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\BrandModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_brand` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wms_brand` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wms_brand` WHERE `id` = 3 ORDER BY id asc LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `wms_brand` SET `name`='ANTA/安踏' WHERE `id` = 3 [ RunTime:0.1944s ]
+
+[ 2016-04-22T16:08:51+08:00 ] 127.0.0.1 /wms/index.php/Brand/delete/id/9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\BrandModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\BrandModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_brand` [ RunTime:0.0050s ]
+SQL: DELETE FROM `wms_brand` WHERE `id` = 9 [ RunTime:0.2272s ]
+
+[ 2016-04-22T16:15:41+08:00 ] 127.0.0.1 /wms/index.php/Privilege/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\PrivilegeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PrivilegeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_privilege` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_privilege` WHERE `name` = '商品品牌' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_privilege` (`name`,`controller`,`module`,`action`) VALUES ('商品品牌','Brand','Brand','index,add,edit,delete') [ RunTime:0.0156s ]
+
+[ 2016-04-22T16:16:12+08:00 ] 127.0.0.1 /wms/index.php/Privilege/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\PrivilegeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PrivilegeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_privilege` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_privilege` WHERE `name` = '商品分类' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_privilege` (`name`,`controller`,`module`,`action`) VALUES ('商品分类','Category','Category','index,add,edit,delete') [ RunTime:0.2972s ]
+
+[ 2016-04-22T16:16:56+08:00 ] 127.0.0.1 /wms/index.php/Privilege/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\PrivilegeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PrivilegeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_privilege` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_privilege` WHERE `name` = '商品' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_privilege` (`name`,`controller`,`module`,`action`) VALUES ('商品','Goods','Goods','index,add,edit,delete') [ RunTime:0.0190s ]
+
+[ 2016-04-22T16:17:29+08:00 ] 127.0.0.1 /wms/index.php/Privilege/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\PrivilegeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PrivilegeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_privilege` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_privilege` WHERE `name` = '职位' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_privilege` (`name`,`controller`,`module`,`action`) VALUES ('职位','Position','Position','index,add,edit,delete') [ RunTime:0.0402s ]
+
+[ 2016-04-22T16:17:53+08:00 ] 127.0.0.1 /wms/index.php/Privilege/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\PrivilegeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PrivilegeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_privilege` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_privilege` WHERE `name` = '权限' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_privilege` (`name`,`controller`,`module`,`action`) VALUES ('权限','Privilege','Privilege','index,add,edit,delete') [ RunTime:0.0190s ]
+
+[ 2016-04-22T16:18:25+08:00 ] 127.0.0.1 /wms/index.php/Privilege/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\PrivilegeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PrivilegeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_privilege` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_privilege` WHERE `name` = '门店' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_privilege` (`name`,`controller`,`module`,`action`) VALUES ('门店','Store','Store','index,add,edit,delete') [ RunTime:0.0260s ]
+
+[ 2016-04-22T16:20:38+08:00 ] 127.0.0.1 /wms/index.php/Privilege/edit/id/6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Home\Model\PrivilegeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PrivilegeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_privilege` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wms_privilege` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wms_privilege` WHERE `id` = 6 ORDER BY id asc LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `wms_privilege` SET `name`='商品管理',`controller`='Goods',`module`='Goods',`action`='index,add,edit,delete' WHERE `id` = 6 [ RunTime:0.2580s ]
+
+[ 2016-04-22T16:20:46+08:00 ] 127.0.0.1 /wms/index.php/Privilege/edit/id/7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\PrivilegeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PrivilegeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_privilege` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wms_privilege` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wms_privilege` WHERE `id` = 7 ORDER BY id asc LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `wms_privilege` SET `name`='职位管理',`controller`='Position',`module`='Position',`action`='index,add,edit,delete' WHERE `id` = 7 [ RunTime:0.2668s ]
+
+[ 2016-04-22T16:20:55+08:00 ] 127.0.0.1 /wms/index.php/Privilege/edit/id/8
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\PrivilegeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PrivilegeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_privilege` [ RunTime:0.0176s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wms_privilege` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wms_privilege` WHERE `id` = 8 ORDER BY id asc LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `wms_privilege` SET `name`='权限管理',`controller`='Privilege',`module`='Privilege',`action`='index,add,edit,delete' WHERE `id` = 8 [ RunTime:0.2294s ]
+
+[ 2016-04-22T16:21:02+08:00 ] 127.0.0.1 /wms/index.php/Privilege/edit/id/9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017600s ]
+NOTIC: [2048] Declaration of Home\Model\PrivilegeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PrivilegeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_privilege` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wms_privilege` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wms_privilege` WHERE `id` = 9 ORDER BY id asc LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `wms_privilege` SET `name`='门店管理',`controller`='Store',`module`='Store',`action`='index,add,edit,delete' WHERE `id` = 9 [ RunTime:0.1488s ]
+
+[ 2016-04-22T16:23:29+08:00 ] 127.0.0.1 /wms/index.php/Role/edit/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\PrivilegeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PrivilegeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_privilege` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name` FROM `wms_privilege`  [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\RoleModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\RoleModel.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `wms_role` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_role a WHERE a.id = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.*,GROUP_CONCAT(c.name) as names FROM wms_role a LEFT JOIN wms_role_privilege as b on a.id=b.role_id LEFT JOIN wms_privilege as c on b.privliege_id=c.id  WHERE a.id = 1 GROUP BY a.id ORDER BY a.id asc LIMIT 0,7   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `wms_role` SET `role_name`='超级管理员' WHERE `id` = 1 [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `wms_role_privilege` [ RunTime:0.0000s ]
+SQL: DELETE FROM `wms_role_privilege` WHERE `role_id` = 1 [ RunTime:0.0256s ]
+SQL: INSERT INTO `wms_role_privilege` (`role_id`,`privliege_id`) VALUES ('1','1') [ RunTime:0.0110s ]
+SQL: INSERT INTO `wms_role_privilege` (`role_id`,`privliege_id`) VALUES ('1','2') [ RunTime:0.0130s ]
+SQL: INSERT INTO `wms_role_privilege` (`role_id`,`privliege_id`) VALUES ('1','3') [ RunTime:0.0120s ]
+SQL: INSERT INTO `wms_role_privilege` (`role_id`,`privliege_id`) VALUES ('1','4') [ RunTime:0.0220s ]
+SQL: INSERT INTO `wms_role_privilege` (`role_id`,`privliege_id`) VALUES ('1','5') [ RunTime:0.0120s ]
+SQL: INSERT INTO `wms_role_privilege` (`role_id`,`privliege_id`) VALUES ('1','6') [ RunTime:0.0120s ]
+SQL: INSERT INTO `wms_role_privilege` (`role_id`,`privliege_id`) VALUES ('1','7') [ RunTime:0.0070s ]
+SQL: INSERT INTO `wms_role_privilege` (`role_id`,`privliege_id`) VALUES ('1','8') [ RunTime:0.0176s ]
+SQL: INSERT INTO `wms_role_privilege` (`role_id`,`privliege_id`) VALUES ('1','9') [ RunTime:0.0130s ]
+
+[ 2016-04-22T16:24:04+08:00 ] 127.0.0.1 /wms/index.php/Role/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\PrivilegeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PrivilegeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_privilege` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name` FROM `wms_privilege`  [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\RoleModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\RoleModel.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `wms_role` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_role` WHERE `role_name` = '商品管理员' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_role` (`role_name`) VALUES ('商品管理员') [ RunTime:0.0506s ]
+SQL: SHOW COLUMNS FROM `wms_role_privilege` [ RunTime:0.0060s ]
+SQL: INSERT INTO `wms_role_privilege` (`role_id`,`privliege_id`) VALUES ('8','4') [ RunTime:0.0000s ]
+SQL: INSERT INTO `wms_role_privilege` (`role_id`,`privliege_id`) VALUES ('8','5') [ RunTime:0.0156s ]
+SQL: INSERT INTO `wms_role_privilege` (`role_id`,`privliege_id`) VALUES ('8','6') [ RunTime:0.0246s ]
+
+[ 2016-04-22T16:24:19+08:00 ] 127.0.0.1 /wms/index.php/Role/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\PrivilegeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PrivilegeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_privilege` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`name` FROM `wms_privilege`  [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Home\Model\RoleModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\RoleModel.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `wms_role` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_role` WHERE `role_name` = '职位管理员' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_role` (`role_name`) VALUES ('职位管理员') [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `wms_role_privilege` [ RunTime:0.0060s ]
+SQL: INSERT INTO `wms_role_privilege` (`role_id`,`privliege_id`) VALUES ('9','7') [ RunTime:0.0160s ]
+
+[ 2016-04-22T16:24:33+08:00 ] 127.0.0.1 /wms/index.php/Role/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\PrivilegeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PrivilegeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_privilege` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`name` FROM `wms_privilege`  [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\RoleModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\RoleModel.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `wms_role` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_role` WHERE `role_name` = '权限管理员' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_role` (`role_name`) VALUES ('权限管理员') [ RunTime:0.1934s ]
+SQL: SHOW COLUMNS FROM `wms_role_privilege` [ RunTime:0.0176s ]
+SQL: INSERT INTO `wms_role_privilege` (`role_id`,`privliege_id`) VALUES ('10','8') [ RunTime:0.0342s ]
+
+[ 2016-04-22T16:24:44+08:00 ] 127.0.0.1 /wms/index.php/Role/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\PrivilegeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PrivilegeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_privilege` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`name` FROM `wms_privilege`  [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Home\Model\RoleModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\RoleModel.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `wms_role` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_role` WHERE `role_name` = '门店管理员' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_role` (`role_name`) VALUES ('门店管理员') [ RunTime:0.2776s ]
+SQL: SHOW COLUMNS FROM `wms_role_privilege` [ RunTime:0.0000s ]
+SQL: INSERT INTO `wms_role_privilege` (`role_id`,`privliege_id`) VALUES ('11','9') [ RunTime:0.0352s ]
+
+[ 2016-04-22T16:31:49+08:00 ] 127.0.0.1 /wms/index.php/Goods/index.html?no=&nickname=&username=&status=1
+ERR: 1054:Unknown column 'status' in 'where clause'
+ [ SQL语句 ] : SELECT a.*,b.*,c.id as position_id,c.name as position_name FROM wms_goods a LEFT JOIN wms_userinfo as b on a.id=b.id LEFT JOIN wms_position as c on b.position=c.id  WHERE `status` = '1' LIMIT 0,7  
+
+[ 2016-04-22T16:31:58+08:00 ] 127.0.0.1 /wms/index.php/Goods/index.html?no=&nickname=&username=&status=1
+ERR: 1054:Unknown column 'status' in 'where clause'
+ [ SQL语句 ] : SELECT a.*,b.*,c.id as position_id,c.name as position_name FROM wms_goods a LEFT JOIN wms_userinfo as b on a.id=b.id LEFT JOIN wms_position as c on b.position=c.id  WHERE `status` = '1' LIMIT 0,7  
+
+[ 2016-04-22T16:32:50+08:00 ] 127.0.0.1 /wms/index.php/Admin/edit/id/32
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\AdminModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\AdminModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_admin a WHERE a.id = 32 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.*,GROUP_CONCAT(c.role_name) as role_name FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id  WHERE a.id = 32 GROUP BY b.admin_id ORDER BY a.id asc LIMIT 0,7   [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Home\Model\RoleModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\RoleModel.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `wms_role` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`role_name` FROM `wms_role`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `wms_admin` SET `nickname`='22211',`username`='22211',`password`='c7916c9600109ef3c10758b7d4b497b2',`tel`='222',`email`='2@qq.com' WHERE `id` = 32 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wms_admin_role` [ RunTime:0.0000s ]
+SQL: DELETE FROM `wms_admin_role` WHERE `admin_id` = 32 [ RunTime:0.0396s ]
+SQL: INSERT INTO `wms_admin_role` (`admin_id`,`role_id`) VALUES ('32','7') [ RunTime:0.0120s ]
+SQL: INSERT INTO `wms_admin_role` (`admin_id`,`role_id`) VALUES ('32','10') [ RunTime:0.0130s ]
+
+[ 2016-04-22T16:36:50+08:00 ] 127.0.0.1 /wms/index.php/Attribute
+ERR: 模板不存在:./Application/Home/View/Attribute/list.html
+
+[ 2016-04-22T16:45:59+08:00 ] 192.168.95.1 /wms/index.php/report/report_list.html
+ERR: 无法加载控制器:Report
+
+[ 2016-04-22T16:47:57+08:00 ] 192.168.95.1 /wms/index.php/report/report_list.html
+ERR: 无法加载控制器:Report
+
+[ 2016-04-22T16:48:54+08:00 ] 192.168.95.1 /wms/index.php/report/report_list.html
+ERR: 无法加载控制器:Report
+
+[ 2016-04-22T16:48:59+08:00 ] 192.168.95.1 /wms/index.php/user/user_info.html
+ERR: 无法加载控制器:User
+
+[ 2016-04-22T16:49:20+08:00 ] 127.0.0.1 /wms/index.php/report/report_list.html
+ERR: 无法加载控制器:Report
+
+[ 2016-04-22T16:49:23+08:00 ] 127.0.0.1 /wms/index.php/report/report_list.html
+ERR: 无法加载控制器:Report
+
+[ 2016-04-22T16:49:53+08:00 ] 192.168.95.1 /wms/index.php/user/user_info.html
+ERR: 无法加载控制器:User
+
+[ 2016-04-22T16:49:56+08:00 ] 192.168.95.1 /wms/index.php/user/user_modi_pwd.html
+ERR: 无法加载控制器:User
+
+[ 2016-04-22T16:50:53+08:00 ] 192.168.95.1 /wms/index.php/report/report_list.html
+ERR: 无法加载控制器:Report
+
+[ 2016-04-22T16:50:56+08:00 ] 192.168.95.1 /wms/index.php/user/user_info.html
+ERR: 无法加载控制器:User
+
+[ 2016-04-22T16:51:12+08:00 ] 192.168.95.1 /wms/index.php/report/report_list.html
+ERR: 无法加载控制器:Report
+
+[ 2016-04-22T16:51:12+08:00 ] 192.168.95.1 /wms/index.php/report/report_list.html
+ERR: 无法加载控制器:Report
+
+[ 2016-04-22T16:51:12+08:00 ] 192.168.95.1 /wms/index.php/report/report_list.html
+ERR: 无法加载控制器:Report
+
+[ 2016-04-22T16:51:14+08:00 ] 192.168.95.1 /wms/index.php/report/report_list.html
+ERR: 无法加载控制器:Report
+
+[ 2016-04-22T16:51:17+08:00 ] 192.168.95.1 /wms/index.php/user/user_info.html
+ERR: 无法加载控制器:User
+
+[ 2016-04-22T16:51:21+08:00 ] 192.168.95.1 /wms/index.php/bill/bill_list.html
+ERR: 无法加载控制器:Bill
+
+[ 2016-04-22T16:51:21+08:00 ] 192.168.95.1 /wms/index.php/user/user_modi_pwd.html
+ERR: 无法加载控制器:User
+
+[ 2016-04-22T16:51:24+08:00 ] 192.168.95.1 /wms/index.php/user/user_modi_pwd.html
+ERR: 无法加载控制器:User
+
+[ 2016-04-22T16:51:31+08:00 ] 192.168.95.1 /wms/index.php/user/user_info.html
+ERR: 无法加载控制器:User
+
+[ 2016-04-22T16:51:34+08:00 ] 192.168.95.1 /wms/index.php/bill/bill_list.html
+ERR: 无法加载控制器:Bill
+
+[ 2016-04-22T16:51:44+08:00 ] 192.168.95.1 /wms/index.php/user/user_info.html
+ERR: 无法加载控制器:User
+
+[ 2016-04-22T16:51:45+08:00 ] 192.168.95.1 /wms/index.php/user/user_info.html
+ERR: 无法加载控制器:User
+
+[ 2016-04-22T16:51:45+08:00 ] 192.168.95.1 /wms/index.php/user/user_info.html
+ERR: 无法加载控制器:User
+
+[ 2016-04-22T16:51:57+08:00 ] 192.168.95.1 /wms/index.php/report/report_list.html
+ERR: 无法加载控制器:Report
+
+[ 2016-04-22T16:52:14+08:00 ] 192.168.95.1 /wms/index.php/Account/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\UserModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\UserModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_user` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_user` WHERE `username` = 'ColorRabbit' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: email D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_user` (`nickname`,`username`,`password`,`create_time`,`status`) VALUES ('ColorRabbit','ColorRabbit','3e21a1642f4596362cf77c25c6d7a9d7','1461315134','0') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wms_userinfo` [ RunTime:0.0176s ]
+SQL: INSERT INTO `wms_userinfo` (`no`,`email`,`position`,`tel`,`sex`,`address`,`post`,`qq`,`id`) VALUES ('CR20160422','','1','','男','','0','0','17') [ RunTime:0.0170s ]
+
+[ 2016-04-22T16:56:53+08:00 ] 192.168.95.1 /wms/index.php/user/user_info.html
+ERR: 无法加载控制器:User
+
+[ 2016-04-22T16:56:53+08:00 ] 192.168.95.1 /wms/index.php/user/user_info.html
+ERR: 无法加载控制器:User
+
+[ 2016-04-22T16:59:04+08:00 ] 192.168.95.1 /wms/index.php/report/report_list.html
+ERR: 无法加载控制器:Report
+
+[ 2016-04-22T16:59:17+08:00 ] 192.168.95.1 /wms/index.php/user/user_modi_pwd.html
+ERR: 无法加载控制器:User
+
+[ 2016-04-22T16:59:20+08:00 ] 192.168.95.1 /wms/index.php/user/user_info.html
+ERR: 无法加载控制器:User
+
+[ 2016-04-22T17:06:04+08:00 ] 192.168.95.1 /wms/index.php/user/user_info.html
+ERR: 无法加载控制器:User
+
+[ 2016-04-22T17:20:01+08:00 ] 192.168.95.1 /wms/index.php/user/user_info.html
+ERR: 无法加载控制器:User
+
+[ 2016-04-22T17:20:19+08:00 ] 192.168.95.1 /wms/index.php/Goods/index.html?no=&nickname=&username=&status=1
+ERR: 1054:Unknown column 'status' in 'where clause'
+ [ SQL语句 ] : SELECT a.*,b.*,c.id as position_id,c.name as position_name FROM wms_goods a LEFT JOIN wms_userinfo as b on a.id=b.id LEFT JOIN wms_position as c on b.position=c.id  WHERE `status` = '1' LIMIT 0,7  
+
+[ 2016-04-22T17:24:04+08:00 ] 192.168.95.1 /wms/index.php/Admin/delete/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\AdminModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\AdminModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0000s ]
+SQL: DELETE FROM `wms_admin` WHERE `id` = 2 [ RunTime:0.0216s ]
+SQL: SHOW COLUMNS FROM `wms_admin_role` [ RunTime:0.0050s ]
+SQL: DELETE FROM `wms_admin_role` WHERE `admin_id` = 2 [ RunTime:0.0150s ]
+
+[ 2016-04-22T17:24:17+08:00 ] 192.168.95.1 /wms/index.php/user/user_info.html
+ERR: 无法加载控制器:User
+
+[ 2016-04-22T17:24:34+08:00 ] 192.168.95.1 /wms/index.php/Store/status/id/1/status/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wms_store` [ RunTime:0.0000s ]
+SQL: UPDATE `wms_store` SET `status`='1' WHERE `id` = 1 [ RunTime:0.1092s ]
+
+[ 2016-04-22T17:24:42+08:00 ] 192.168.95.1 /wms/index.php/report/report_list.html
+ERR: 无法加载控制器:Report
+
+[ 2016-04-22T17:24:47+08:00 ] 192.168.95.1 /wms/index.php/user/user_info.html
+ERR: 无法加载控制器:User
+
+[ 2016-04-22T17:24:50+08:00 ] 192.168.95.1 /wms/index.php/user/user_modi_pwd.html
+ERR: 无法加载控制器:User
+
+[ 2016-04-22T17:26:47+08:00 ] 192.168.95.1 /wms/index.php/Admin/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\AdminModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\AdminModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2016-04-22T17:27:32+08:00 ] 192.168.95.1 /wms/index.php/Store/status/id/1/status/0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wms_store` [ RunTime:0.0176s ]
+SQL: UPDATE `wms_store` SET `status`='0' WHERE `id` = 1 [ RunTime:0.0156s ]
+
+[ 2016-04-22T17:27:40+08:00 ] 192.168.95.1 /wms/index.php/Store/status/id/1/status/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `wms_store` [ RunTime:0.0166s ]
+SQL: UPDATE `wms_store` SET `status`='1' WHERE `id` = 1 [ RunTime:0.1680s ]
+
+[ 2016-04-22T17:27:45+08:00 ] 192.168.95.1 /wms/index.php/Store/status/id/2/status/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wms_store` [ RunTime:0.0000s ]
+SQL: UPDATE `wms_store` SET `status`='1' WHERE `id` = 2 [ RunTime:0.0396s ]
+
+[ 2016-04-22T17:27:55+08:00 ] 192.168.95.1 /wms/index.php/Store/status/id/4/status/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wms_store` [ RunTime:0.0080s ]
+SQL: UPDATE `wms_store` SET `status`='1' WHERE `id` = 4 [ RunTime:0.2970s ]
+
+[ 2016-04-22T17:27:59+08:00 ] 192.168.95.1 /wms/index.php/Store/status/id/3/status/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wms_store` [ RunTime:0.0166s ]
+SQL: UPDATE `wms_store` SET `status`='1' WHERE `id` = 3 [ RunTime:0.0120s ]
+
+[ 2016-04-22T17:28:31+08:00 ] 192.168.95.1 /wms/index.php/Store/status/id/1/status/0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wms_store` [ RunTime:0.0000s ]
+SQL: UPDATE `wms_store` SET `status`='0' WHERE `id` = 1 [ RunTime:0.0386s ]
+
+[ 2016-04-22T17:28:37+08:00 ] 192.168.95.1 /wms/index.php/Store/status/id/1/status/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `wms_store` [ RunTime:0.0050s ]
+SQL: UPDATE `wms_store` SET `status`='1' WHERE `id` = 1 [ RunTime:0.0120s ]
+
+[ 2016-04-22T17:28:55+08:00 ] 192.168.95.1 /wms/index.php/user/user_modi_pwd.html
+ERR: 无法加载控制器:User
+
+[ 2016-04-22T17:30:04+08:00 ] 192.168.95.1 /wms/index.php/user/user_modi_pwd.html
+ERR: 无法加载控制器:User
+
+[ 2016-04-22T17:39:25+08:00 ] 127.0.0.1 /wms/index.php/Attribute/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\AttributeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\AttributeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_attribute` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_attribute` WHERE `name` = '号码' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1054:Unknown column 'time' in 'field list'
+ [ SQL语句 ] : INSERT INTO `wms_attribute` (`name`,`time`) VALUES ('号码','1461317965')
+ERR: 1054:Unknown column 'time' in 'field list'
+ [ SQL语句 ] : INSERT INTO `wms_attribute` (`name`,`time`) VALUES ('号码','1461317965')
+
+[ 2016-04-22T17:39:27+08:00 ] 127.0.0.1 /wms/index.php/Attribute/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\AttributeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\AttributeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_attribute` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_attribute` WHERE `name` = '号码' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1054:Unknown column 'time' in 'field list'
+ [ SQL语句 ] : INSERT INTO `wms_attribute` (`name`,`time`) VALUES ('号码','1461317967')
+ERR: 1054:Unknown column 'time' in 'field list'
+ [ SQL语句 ] : INSERT INTO `wms_attribute` (`name`,`time`) VALUES ('号码','1461317967')
+
+[ 2016-04-22T17:39:53+08:00 ] 127.0.0.1 /wms/index.php/Attribute/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\AttributeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\AttributeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_attribute` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_attribute` WHERE `name` = '号码' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1054:Unknown column 'time' in 'field list'
+ [ SQL语句 ] : INSERT INTO `wms_attribute` (`name`,`time`) VALUES ('号码','1461317993')
+ERR: 1054:Unknown column 'time' in 'field list'
+ [ SQL语句 ] : INSERT INTO `wms_attribute` (`name`,`time`) VALUES ('号码','1461317993')
+

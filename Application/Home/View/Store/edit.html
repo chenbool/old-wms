@@ -1,0 +1,98 @@
+<layout name="Public/layout"/>             
+{:jumps($infos['authority'],CONTROLLER_NAME)}
+        
+        <!--主要区域开始-->
+        <div id="main">            
+
+            <form action="__SELF__" method="post" class="main_form">
+                
+                <input type="hidden" name="id" value='{$info.id}' />
+                
+                <div class="text_info clearfix"><span>门店名称：</span></div>
+                <div class="input_info">
+                    <input type="text" class="width300" value="{$info.name}" name='name'/>
+                    <span class="required">*</span>
+                    <div class="validate_msg_short">20长度的字母、数字、汉字和下划线的组合</div>
+                </div>
+                
+                <div class="text_info clearfix"><span>管理者：</span></div>
+                <div class="input_info">
+                    <input type="text" value="{$info.leader}" class="width110" name='leader'/>
+                    <span class="info"></span>
+                    <span class="required">*</span>
+                    <div class="validate_msg_long">10长度的字母、数字、汉字</div>
+                </div>
+                                
+                <div class="text_info clearfix"><span>电话：</span></div>
+                <div class="input_info">
+                    <input type="text" value="{$info.tel}" class="width150" name='tel'/>
+                    <span class="required">*</span>
+                    <div class="validate_msg_long ">数字组合</div>
+                </div>
+              
+                <div class="text_info clearfix"><span>创建时间：</span></div>
+                <div class="input_info">
+                    <input type="date" value="{$info.create_time}" class="width150" name='create_time'/>
+                    <span class="required">*</span>
+                    <div class="validate_msg_long ">数字组合</div>
+                </div>    
+                
+                <div class="text_info clearfix"><span>地址：</span></div>
+                <div class="input_info">
+                    <input type="text" value="{$info.address}" class="width300" name='address'/>
+                    <div class="validate_msg_short ">数字、字母、汉字组合</div>
+                </div>
+                
+                <div class="text_info clearfix"><span>描述：</span></div>
+                <div class="input_info_high">
+                    <textarea class="width300 height70" name='desc'>{$info.desc}</textarea>
+                    <div class="validate_msg_short ">100长度的字母、数字、汉字和下划线的组合</div>
+                </div>  
+                
+                <div class="button_info clearfix">
+                    <input type="button" value="保存" class="btn_save"  onclick="send()" />
+                    <input type="reset" value="取消" class="btn_save" />
+                </div>
+                
+            </form>  
+        </div>
+        <!--主要区域结束-->
+
+<script type="text/javascript">
+    $(function(){
+        //点击之后的图标
+        $('.store_off').addClass('store_on').removeClass('store_off');
+    });  
+</script>
+<script type="text/javascript">
+//ajax提交
+function send(obj){
+
+            $.ajax({
+                url: '__SELF__',
+                type: 'post',
+                dataType:'json',
+                data: $(".main_form").serializeArray(),
+                success: function(data) {
+//                    console.log(data);
+                    //判断是否添加成功！
+                    if(data.status==0){
+                        layer.msg(data.info,{icon: 5});
+                    }else{
+                        layer.msg(data.info,{icon: 6});
+                        
+                        //延迟跳转
+                        setTimeout(function () {
+                            location.href = "{:U('Store/index')}";
+                        }, {:C('AJAX_TIME')});
+                        
+                        
+                    }
+                    
+                }
+            });
+
+
+}
+    
+</script>

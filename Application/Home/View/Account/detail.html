@@ -1,0 +1,99 @@
+<layout name="Public/layout"/>
+{:jumps($infos['authority'],CONTROLLER_NAME)}
+        <!--主要区域开始-->
+        <div id="main">  
+            
+            <form action="__SELF__" method="post" class="main_form">
+                    <!--必填项-->
+                    <div class="text_info clearfix"><span>账号ID：</span></div>
+                    <div class="input_info">
+                        <input type="text" value="{$info.id}" readonly class="readonly" name='id'/>
+                    </div>
+                    
+                    <div class="text_info clearfix"><span>姓名：</span></div>
+                    <div class="input_info">
+                        <input type="text" value="{$info.nickname}" name='nickname' readonly class="readonly"/>
+                        <span class="required">*</span>
+                        <div class="validate_msg_long ">20长度以内的汉字、字母和数字的组合</div>
+                    </div>
+                    
+                    <div class="text_info clearfix"><span>员工编号：</span></div>
+                    <div class="input_info">
+                        <input type="text" value="{$info.no}" readonly class="readonly" name='no' />
+                    </div>
+                    
+                    <div class="text_info clearfix"><span>登录账号：</span></div>
+                    <div class="input_info">
+                        <input type="text" value="{$info.username}" readonly class="readonly"  name='username' />                        
+                    </div>
+                    
+                    
+                    <div class="text_info clearfix"><span>电话：</span></div>
+                    <div class="input_info">
+                        <input type="text" class="width200 readonly" value='{$info.tel}' name='tel'/>
+                        <span class="required">*</span>
+                        <div class="validate_msg_medium ">正确的电话号码格式：手机或固话</div>
+                    </div>
+
+                    <div class="text_info clearfix"><span>Email：</span></div>
+                    <div class="input_info">
+                        <input type="text" class="width200 readonly" value='{$info.email}' name='email' />
+                        <div class="validate_msg_medium">50长度以内，合法的 Email 格式</div>
+                    </div> 
+                    
+                    <div class="text_info clearfix"><span>职业：</span></div>
+                    <div class="input_info">
+                        <select name='position' disabled> 
+                            <option>干部</option>
+                        </select>                        
+                    </div>
+                    
+                    <div class="text_info clearfix"><span>状态：</span></div>
+                    <div class="input_info fee_type">
+                        <input type="radio" disabled name="status" value='0'  <php>if($info['status']==0){ echo 'checked'; }</php>/>
+                        <label >正常</label>
+                        
+                        <input type="radio" disabled name="status" value='1' <php>if($info['status']==1){ echo 'checked'; }</php>/>
+                        <label >禁止</label>
+
+                    </div> 
+                    
+                    <div class="text_info clearfix"><span>性别：</span></div>
+                    <div class="input_info fee_type">
+                        <input type="radio" disabled name="sex" id="male"  value='男'<php>if($info['sex']=='男'){ echo 'checked'; }</php>/ >
+                        <label for="male" >男</label>
+                        
+                        <input type="radio" disabled name="sex" id="female" value='女' <php>if($info['sex']=='女'){ echo 'checked'; }</php>/>
+                        <label for="female" >女</label>
+
+                    </div> 
+                    
+                    <div class="text_info clearfix"><span>通信地址：</span></div>
+                    <div class="input_info">
+                        <input type="text" class="width350 readonly" name='address' value="{$info.address}"/>
+                        <div class="validate_msg_tiny">50长度以内</div>
+                    </div> 
+                    
+                    <div class="text_info clearfix"><span>邮编：</span></div>
+                    <div class="input_info">
+                        <input type="text" name="post" value='{$info.post}' class="readonly"/>
+                        <div class="validate_msg_long">6位数字</div>
+                    </div> 
+                    
+                    <div class="text_info clearfix"><span>QQ：</span></div>
+                    <div class="input_info">
+                        <input type="text" name="qq" value="{$info.qq}" class="readonly"/>
+                        <div class="validate_msg_long">5到11位数字</div>
+                    </div>  
+                    
+
+                </form>  
+        </div>
+        <!--主要区域结束-->
+      
+<script type="text/javascript">
+    $(function(){
+        //点击之后的图标
+         $('.emp_off').addClass('emp_on').removeClass('emp_off');
+    });  
+</script>

@@ -1,0 +1,265 @@
+[ 2016-05-10T09:07:16+08:00 ] 127.0.0.1 /wms/index.php/Admin/edit/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0000s ]
+SQL: SELECT a.*,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '1' GROUP BY b.admin_id LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\AdminModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\AdminModel.class.php 第 138 行.
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_admin a WHERE a.id = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.*,GROUP_CONCAT(c.role_name) as role_name FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id  WHERE a.id = 1 GROUP BY b.admin_id ORDER BY a.id asc LIMIT 0,7   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\RoleModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\RoleModel.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `wms_role` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`role_name` FROM `wms_role`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `wms_admin` SET `nickname`='布尔',`username`='bool',`password`='21232f297a57a5a743894a0e4a801fc3',`tel`='18101565685',`email`='30024167@qq.com' WHERE `id` = 1 [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `wms_admin_role` [ RunTime:0.0000s ]
+SQL: DELETE FROM `wms_admin_role` WHERE `admin_id` = 1 [ RunTime:0.0000s ]
+SQL: INSERT INTO `wms_admin_role` (`admin_id`,`role_id`) VALUES ('1','7') [ RunTime:0.0156s ]
+
+[ 2016-05-10T09:21:18+08:00 ] 127.0.0.1 /wms/index.php/Admin/edit/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0000s ]
+SQL: SELECT a.*,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '1' GROUP BY b.admin_id LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\AdminModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\AdminModel.class.php 第 138 行.
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_admin a WHERE a.id = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.*,GROUP_CONCAT(c.role_name) as role_name FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id  WHERE a.id = 1 GROUP BY b.admin_id ORDER BY a.id asc LIMIT 0,7   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\RoleModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\RoleModel.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `wms_role` [ RunTime:0.0156s ]
+SQL: SELECT `id`,`role_name` FROM `wms_role`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `wms_admin` SET `nickname`='布尔',`username`='bool',`password`='21232f297a57a5a743894a0e4a801fc3',`tel`='18101565685',`email`='30024167@qq.com' WHERE `id` = 1 [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `wms_admin_role` [ RunTime:0.0000s ]
+SQL: DELETE FROM `wms_admin_role` WHERE `admin_id` = 1 [ RunTime:0.0216s ]
+SQL: INSERT INTO `wms_admin_role` (`admin_id`,`role_id`) VALUES ('1','1') [ RunTime:0.0120s ]
+SQL: INSERT INTO `wms_admin_role` (`admin_id`,`role_id`) VALUES ('1','7') [ RunTime:0.0140s ]
+
+[ 2016-05-10T09:22:43+08:00 ] 127.0.0.1 /wms/index.php/Privilege/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0000s ]
+SQL: SELECT a.*,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '1' GROUP BY b.admin_id LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\PrivilegeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\PrivilegeModel.class.php 第 99 行.
+SQL: SHOW COLUMNS FROM `wms_privilege` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_privilege` WHERE `name` = '管理员管理' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_privilege` (`name`,`controller`,`module`,`action`) VALUES ('管理员管理','Admin','Admin','index,add,edit,delete') [ RunTime:0.0156s ]
+
+[ 2016-05-10T09:32:43+08:00 ] 127.0.0.1 /wms/index.php/Admin/edit/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0156s ]
+SQL: SELECT a.*,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '1' GROUP BY b.admin_id LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\AdminModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\AdminModel.class.php 第 138 行.
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_admin a WHERE a.id = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.*,GROUP_CONCAT(c.role_name) as role_name FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id  WHERE a.id = 1 GROUP BY b.admin_id ORDER BY a.id asc LIMIT 0,7   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\RoleModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\RoleModel.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `wms_role` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`role_name` FROM `wms_role`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `wms_admin` SET `nickname`='布尔',`username`='bool',`password`='21232f297a57a5a743894a0e4a801fc3',`tel`='18101565685',`email`='30024167@qq.com' WHERE `id` = 1 [ RunTime:0.2496s ]
+SQL: SHOW COLUMNS FROM `wms_admin_role` [ RunTime:0.0156s ]
+SQL: DELETE FROM `wms_admin_role` WHERE `admin_id` = 1 [ RunTime:0.0312s ]
+SQL: INSERT INTO `wms_admin_role` (`admin_id`,`role_id`) VALUES ('1','1') [ RunTime:0.0156s ]
+
+[ 2016-05-10T09:45:02+08:00 ] 127.0.0.1 /wms/index.php/Admin/edit/id/32
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0000s ]
+SQL: SELECT a.*,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '1' GROUP BY b.admin_id LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\AdminModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\AdminModel.class.php 第 138 行.
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_admin a WHERE a.id = 32 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.*,GROUP_CONCAT(c.role_name) as role_name FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id  WHERE a.id = 32 GROUP BY b.admin_id ORDER BY a.id asc LIMIT 0,7   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\RoleModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\RoleModel.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `wms_role` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`role_name` FROM `wms_role`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `wms_admin` SET `nickname`='22211',`username`='22211',`password`='c506ff134babdd6e68ab3e6350e95305',`tel`='222',`email`='2@qq.com' WHERE `id` = 32 [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `wms_admin_role` [ RunTime:0.0156s ]
+SQL: DELETE FROM `wms_admin_role` WHERE `admin_id` = 32 [ RunTime:0.0000s ]
+SQL: INSERT INTO `wms_admin_role` (`admin_id`,`role_id`) VALUES ('32','7') [ RunTime:0.0156s ]
+SQL: INSERT INTO `wms_admin_role` (`admin_id`,`role_id`) VALUES ('32','10') [ RunTime:0.0156s ]
+
+[ 2016-05-10T09:45:38+08:00 ] 127.0.0.1 /wms/index.php/Admin/edit/id/32
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0000s ]
+SQL: SELECT a.*,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '1' GROUP BY b.admin_id LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\AdminModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\AdminModel.class.php 第 138 行.
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_admin a WHERE a.id = 32 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.*,GROUP_CONCAT(c.role_name) as role_name FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id  WHERE a.id = 32 GROUP BY b.admin_id ORDER BY a.id asc LIMIT 0,7   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\RoleModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\RoleModel.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `wms_role` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`role_name` FROM `wms_role`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `wms_admin` SET `nickname`='22211',`username`='test',`password`='098f6bcd4621d373cade4e832627b4f6',`tel`='222',`email`='2@qq.com' WHERE `id` = 32 [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `wms_admin_role` [ RunTime:0.0000s ]
+SQL: DELETE FROM `wms_admin_role` WHERE `admin_id` = 32 [ RunTime:0.0156s ]
+SQL: INSERT INTO `wms_admin_role` (`admin_id`,`role_id`) VALUES ('32','7') [ RunTime:0.0156s ]
+SQL: INSERT INTO `wms_admin_role` (`admin_id`,`role_id`) VALUES ('32','10') [ RunTime:0.0156s ]
+
+[ 2016-05-10T09:46:32+08:00 ] 127.0.0.1 /wms/index.php/User/info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0000s ]
+SQL: SELECT a.*,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '32' GROUP BY b.admin_id LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wms_admin` SET `id`='2',`nickname`='test',`tel`='222',`email`='2@qq.com' WHERE `id` = 2 [ RunTime:0.0000s ]
+
+[ 2016-05-10T09:46:40+08:00 ] 127.0.0.1 /wms/index.php/User/info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0000s ]
+SQL: SELECT a.*,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '32' GROUP BY b.admin_id LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wms_admin` SET `id`='2',`nickname`='test1',`tel`='222',`email`='2@qq.com' WHERE `id` = 2 [ RunTime:0.0000s ]
+
+[ 2016-05-10T09:46:47+08:00 ] 127.0.0.1 /wms/index.php/User/info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0000s ]
+SQL: SELECT a.*,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '32' GROUP BY b.admin_id LIMIT 1   [ RunTime:0.0156s ]
+SQL: UPDATE `wms_admin` SET `id`='2',`nickname`='22211',`tel`='222',`email`='2@qq.com' WHERE `id` = 2 [ RunTime:0.0000s ]
+
+[ 2016-05-10T09:46:48+08:00 ] 127.0.0.1 /wms/index.php/User/info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0000s ]
+SQL: SELECT a.*,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '32' GROUP BY b.admin_id LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wms_admin` SET `id`='2',`nickname`='22211',`tel`='222',`email`='2@qq.com' WHERE `id` = 2 [ RunTime:0.0000s ]
+
+[ 2016-05-10T09:46:48+08:00 ] 127.0.0.1 /wms/index.php/User/info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0000s ]
+SQL: SELECT a.*,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '32' GROUP BY b.admin_id LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wms_admin` SET `id`='2',`nickname`='22211',`tel`='222',`email`='2@qq.com' WHERE `id` = 2 [ RunTime:0.0000s ]
+
+[ 2016-05-10T09:46:48+08:00 ] 127.0.0.1 /wms/index.php/User/info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0000s ]
+SQL: SELECT a.*,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '32' GROUP BY b.admin_id LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wms_admin` SET `id`='2',`nickname`='22211',`tel`='222',`email`='2@qq.com' WHERE `id` = 2 [ RunTime:0.0000s ]
+
+[ 2016-05-10T09:46:49+08:00 ] 127.0.0.1 /wms/index.php/User/info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0156s ]
+SQL: SELECT a.*,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '32' GROUP BY b.admin_id LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wms_admin` SET `id`='2',`nickname`='22211',`tel`='222',`email`='2@qq.com' WHERE `id` = 2 [ RunTime:0.0000s ]
+
+[ 2016-05-10T09:46:52+08:00 ] 127.0.0.1 /wms/index.php/User/info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0000s ]
+SQL: SELECT a.*,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '32' GROUP BY b.admin_id LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wms_admin` SET `id`='2',`nickname`='22211',`tel`='222',`email`='2@qq.com' WHERE `id` = 2 [ RunTime:0.0000s ]
+
+[ 2016-05-10T09:46:54+08:00 ] 127.0.0.1 /wms/index.php/User/info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0156s ]
+SQL: SELECT a.*,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '32' GROUP BY b.admin_id LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wms_admin` SET `id`='2',`nickname`='22211',`tel`='222',`email`='2@qq.com' WHERE `id` = 2 [ RunTime:0.0000s ]
+
+[ 2016-05-10T09:46:55+08:00 ] 127.0.0.1 /wms/index.php/User/info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0156s ]
+SQL: SELECT a.*,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '32' GROUP BY b.admin_id LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wms_admin` SET `id`='2',`nickname`='22211',`tel`='222',`email`='2@qq.com' WHERE `id` = 2 [ RunTime:0.0000s ]
+
+[ 2016-05-10T09:46:55+08:00 ] 127.0.0.1 /wms/index.php/User/info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0000s ]
+SQL: SELECT a.*,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '32' GROUP BY b.admin_id LIMIT 1   [ RunTime:0.0156s ]
+SQL: UPDATE `wms_admin` SET `id`='2',`nickname`='22211',`tel`='222',`email`='2@qq.com' WHERE `id` = 2 [ RunTime:0.0000s ]
+
+[ 2016-05-10T09:46:55+08:00 ] 127.0.0.1 /wms/index.php/User/info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0156s ]
+SQL: SELECT a.*,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '32' GROUP BY b.admin_id LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wms_admin` SET `id`='2',`nickname`='22211',`tel`='222',`email`='2@qq.com' WHERE `id` = 2 [ RunTime:0.0000s ]
+
+[ 2016-05-10T09:47:02+08:00 ] 127.0.0.1 /wms/index.php/User/info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0000s ]
+SQL: SELECT a.*,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '32' GROUP BY b.admin_id LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wms_admin` SET `id`='2',`nickname`='22211',`tel`='222',`email`='2@qq.com' WHERE `id` = 2 [ RunTime:0.0000s ]
+
+[ 2016-05-10T09:47:34+08:00 ] 127.0.0.1 /wms/index.php/User/info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0000s ]
+SQL: SELECT a.*,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '32' GROUP BY b.admin_id LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wms_admin` SET `id`='2',`nickname`='test',`tel`='222',`email`='2@qq.com' WHERE `id` = 2 [ RunTime:0.0000s ]
+
+[ 2016-05-10T09:47:37+08:00 ] 127.0.0.1 /wms/index.php/User/info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0030s ]
+SQL: SELECT a.*,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '32' GROUP BY b.admin_id LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wms_admin` SET `id`='2',`nickname`='test',`tel`='222',`email`='2@qq.com' WHERE `id` = 2 [ RunTime:0.0000s ]
+
+[ 2016-05-10T09:48:53+08:00 ] 127.0.0.1 /wms/index.php/User/info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0000s ]
+SQL: SELECT a.*,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '32' GROUP BY b.admin_id LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wms_admin` SET `id`='2',`nickname`='admin',`tel`='222',`email`='2@qq.com' WHERE `id` = 2 [ RunTime:0.0000s ]
+
+[ 2016-05-10T10:38:46+08:00 ] 127.0.0.1 /wms/index.php/Login/login
+ERR: Think\Model:check_verify方法不存在！
+
+[ 2016-05-10T11:51:39+08:00 ] 127.0.0.1 /wms/index.php/User/pwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0000s ]
+SQL: SELECT a.*,a.id as user_id,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,e.id as privliege_id,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '1' GROUP BY b.admin_id LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.*,GROUP_CONCAT(c.role_name) as role_name FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id  WHERE a.id = '1' GROUP BY b.admin_id LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wms_admin` SET `id`='1',`password`='c506ff134babdd6e68ab3e6350e95305' WHERE `id` = 1 [ RunTime:0.1404s ]
+
+[ 2016-05-10T11:53:43+08:00 ] 127.0.0.1 /wms/index.php/User/pwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wms_user` [ RunTime:0.0000s ]
+SQL: SELECT a.*,a.id as user_id,b.*,c.id as position_id,c.name as position_name,d.name as store_name,d.id as store_id FROM wms_user a LEFT JOIN wms_userinfo as b on a.id=b.id LEFT JOIN wms_position as c on b.position=c.id LEFT JOIN wms_store as d on b.store_id=d.id  WHERE a.id = '13' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`username`,`password` FROM `wms_user` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wms_user` SET `id`='13',`password`='d41d8cd98f00b204e9800998ecf8427e' WHERE `id` = 13 [ RunTime:0.1816s ]
+

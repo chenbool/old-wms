@@ -1,0 +1,99 @@
+<layout name="Public/layout"/>
+{:jumps($infos['authority'],CONTROLLER_NAME)}
+
+        <script language="javascript" type="text/javascript">
+            function deleteRole() {
+                var r = window.confirm("确定要删除此角色吗？");
+                document.getElementById("operate_result_info").style.display = "block";
+            }
+        </script>
+
+        
+        <!--主要区域开始-->
+        <div id="main">
+            <form action="" method="">
+                <!--查询-->
+                <div class="search_add">
+                    <input type="button" value="增加" class="btn_add" onclick="location.href='{:U('Role/add')}';" />
+                </div>  
+                
+                <!--删除的操作提示-->
+                <div id="operate_result_info" class="operate_success">
+                    <img src="__PUBLIC__/images/close.png" onclick="this.parentNode.style.display='none';" />
+                    删除成功！
+                </div> <!--删除错误！该角色被使用，不能删除。-->
+                
+                <!--数据区域：用表格展示数据-->     
+                <div id="data">                      
+                    <table id="datalist">
+                        <tr>                            
+                            <th>角色 ID</th>
+                            <th>角色名称</th>
+                            <th class="width600">拥有的权限</th>
+                            <th class="td_modi"></th>
+                        </tr>   
+                        
+<!--遍历数据 start-->                                                    
+<volist name="res['res']" id='vo' empty="$empty">                                            
+                        <tr>
+                            <td>{$vo.id}</td>
+                            <td>{$vo.role_name}</td>
+                            <td>{$vo.names}</td>
+                            <td>
+                                <input type="button" value="修改" class="btn_modify" onclick="location.href='__CONTROLLER__/edit/id/{$vo.id}';"/>
+                                <input type="button" value="删除" class="btn_delete" onclick="deletes('__CONTROLLER__/delete/id/{$vo.id}'); " />
+                            </td>
+                        </tr>
+</volist>    
+<!--遍历数据 end-->
+
+                    </table>
+                </div> 
+                <!--分页-->
+                <div id="pages">
+                    {$res['page']}
+                </div>
+            </form>
+        </div>
+        <!--主要区域结束-->
+        
+<script type="text/javascript">
+    $(function(){
+        //点击之后的图标
+        $('.role_off').addClass('role_on').removeClass('role_off');
+    });  
+</script>
+<script type="text/javascript">
+
+//删除
+function deletes(obj){
+      
+    layer.confirm('你确定真的要删除此角色？', {icon: 3, title:'提示'}, function(index){
+    if(index){    
+        
+        $.get(obj, function(data){
+            
+            //判断是否删除成功！
+            if(data.status==0){
+                layer.msg(data.info,{icon: 5});
+            }else{
+                layer.msg(data.info,{icon: 6});
+
+                //延迟跳转
+                setTimeout(function () {
+                    location.href = "{:U('Sell/index')}";
+                }, {:C('AJAX_TIME')});
+
+            }
+            
+        });
+        
+        
+    }  
+      layer.close(index);
+    });    
+        
+}
+    
+     
+</script>

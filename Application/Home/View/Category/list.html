@@ -1,0 +1,87 @@
+<layout name="Public/layout"/>     
+{:jumps($infos['authority'],CONTROLLER_NAME)}
+
+        <!--主要区域开始-->
+        <div id="main">
+            <form action="" method="">
+                <!--查询-->
+                <div class="search_add">
+                    <input type="button" value="增加" class="btn_add" onclick="location.href='__CONTROLLER__/add';" />
+                </div>  
+                
+                
+                <!--数据区域：用表格展示数据-->     
+                <div id="data">                      
+                    <table id="datalist">
+                        <tr>                            
+                            <th>分类 ID</th>
+                            <th>分类名称</th>
+                            <th>创建时间</th>
+                            <th class="td_modi"></th>
+                        </tr>  
+                  
+<volist name="res['res']" id='vo' empty="$empty">                                                                         
+                        <tr>
+                            <td>{$vo.id}</td>
+                            <td>{$vo.name}</td>
+                            <td>{:date('Y-m-d H:i:s',$vo['time']) }</td>
+                            <td>
+                                <input type="button" value="修改" class="btn_modify" onclick="location.href='__CONTROLLER__/edit/id/{$vo.id}';"/>
+                                <input type="button" value="删除" class="btn_delete" onclick="deletes('__CONTROLLER__/delete/id/{$vo.id}');" />
+                            </td>
+                        </tr>
+</volist>                           
+
+                    </table>
+                </div> 
+                <!--分页-->
+                <div id="pages">
+                    {$res['page']}
+                </div>
+            </form>
+        </div>
+        <!--主要区域结束-->
+
+<script type="text/javascript">
+    //删除
+    function deletes(obj){
+      
+    layer.confirm('你确定真的要删除此分类？', {icon: 3, title:'提示'}, function(index){
+    if(index){    
+        
+        $.get(obj, function(data){
+            
+            //判断是否删除成功！
+            if(data.status==0){
+                layer.msg(data.info,{icon: 5});
+            }else{
+                layer.msg(data.info,{icon: 6});
+
+                //延迟跳转
+                setTimeout(function () {
+                    location.href = "{:U('Category/index')}";
+                }, {:C('AJAX_TIME')});
+
+            }
+            
+        });
+        
+        
+    }  
+      layer.close(index);
+    });    
+        
+    }    
+    
+</script>             
+<style type="text/css">
+    .empty{
+        font-weight:bold;
+    }
+</style>
+<script type="text/javascript">
+    $(function(){
+        //点击之后的图标
+        $('.bill_off').addClass('bill_on').removeClass('bill_off');
+    });  
+</script>

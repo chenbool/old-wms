@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>WMS-仓储管理系统</title>
+        <link type="text/css" rel="stylesheet" media="all" href="__PUBLIC__/styles/global.css" />
+        <link type="text/css" rel="stylesheet" media="all" href="__PUBLIC__/styles/global_color.css" /> 
+        <script src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
+        <script src="__PUBLIC__/layer/layer.js"></script>
+        <script src="__PUBLIC__/js/user.js"></script>
+    </head>
+    <body>
+        <!--Logo区域开始-->
+        <div id="header">
+            <img src="__PUBLIC__/images/logo.png" alt="logo" class="left"/>
+            <span style="font-weight:bold;">Hi!</span>  
+            <span style="color:white;font-weight:bold;">{$infos.nickname}</span> 
+            <a href="{:U('Login/loginout')}" >[退出]</a>            
+        </div>
+        <!--Logo区域结束-->
+        
+        <!--导航区域开始-->
+        <div id="navi">                        
+            <ul id="menu">
+                <li><a href="{:U('Index/index')}" class="index_off"></a></li>
+                <li><a href="{:U('Role/index')}" class="role_off"></a></li>
+                <li><a href="{:U('Admin/index')}" class="admin_off"></a></li>
+                <li><a href="{:U('Store/index')}" class="store_off"></a></li>
+                <li><a href="{:U('Account/index')}" class="emp_off"></a></li>
+                <li><a href="{:U('Buy/index')}" class="buy_off"></a></li>               
+                <li><a href="{:U('Sell/index')}" class="sell_off"></a></li>
+                <li><a href="{:U('Goods/index')}" class="warehouse_off"></a></li>
+                <li><a href="{:U('User/info')}" class="information_off"></a></li>
+                <li><a href="{:U('User/pwd')}" class="password_off"></a></li>
+            </ul>            
+        </div>
+        <!--导航区域结束-->
+ 
+{__CONTENT__}        
+
+
+        <div id="footer">
+            <p>[ 源自bool，专注WMS，TMS，POD的解决方案 ]</p>
+            <p>版权所有(C)bool设计 qq:30024167 </p>
+        </div>
+    </body>
+</html>

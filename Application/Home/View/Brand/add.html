@@ -1,0 +1,59 @@
+<layout name="Public/layout"/>     
+{:jumps($infos['authority'],CONTROLLER_NAME)}
+
+        <!--主要区域开始-->
+        <div id="main">            
+
+            <form action="__SELF__" method="post" class="main_form">
+                <div class="text_info clearfix"><span>品牌名称：</span></div>
+                <div class="input_info">
+                    <input type="text" class="width200" name="name"/>
+                    <span class="required">*</span>
+                    <div class="validate_msg_medium">不能为空，且为20长度的字母、数字和汉字的组合</div>
+                </div>                    
+
+                <div class="button_info clearfix">
+                    <input type="button" value="保存" class="btn_save" onclick="send()" />
+                    <input type="button" value="取消" class="btn_save" />
+                </div>
+            </form>
+        </div>
+        <!--主要区域结束-->
+
+        
+<script type="text/javascript">
+    function send(){
+
+                $.ajax({
+                    url: '__SELF__',
+                    type: 'post',
+                    dataType:'json',
+                    data: $(".main_form").serializeArray(),
+                    success: function(data) {
+
+                        //判断是否添加成功！
+                        if(data.status==0){
+                            layer.msg(data.info,{icon: 5});
+                        }else{
+                            layer.msg(data.info,{icon: 6});
+
+                            //延迟跳转
+                            setTimeout(function () {
+                                location.href = "{:U('Brand/index')}";
+                            }, {:C('AJAX_TIME')});
+
+
+                        }
+
+                    }
+                });
+
+            
+    }
+</script>   
+<script type="text/javascript">
+    $(function(){
+        //点击之后的图标
+        $('.bill_off').addClass('bill_on').removeClass('bill_off');
+    });  
+</script>

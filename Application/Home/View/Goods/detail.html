@@ -1,0 +1,187 @@
+<layout name="Public/layout"/>     
+{:jumps($infos['authority'],CONTROLLER_NAME)}
+
+        <!--主要区域开始-->
+        <div id="main">            
+                
+                <div class="text_info clearfix"><span>编号：</span></div>
+                <div class="input_info">
+                    <input type="text" class="width200" name='sn' value='{$info.sn}' disabled/>
+                    <span class="required">*</span>
+                    <div class="validate_msg_medium">不能为空，且为20长度的字母、数字和汉字的组合</div>
+                </div> 
+                
+                <div class="text_info clearfix"><span>商品名称：</span></div>
+                <div class="input_info">
+                    <input type="text" class="width200" name='name' value='{$info.name}' disabled/>
+                    <span class="required">*</span>
+                    <div class="validate_msg_medium">不能为空，且为20长度的字母、数字和汉字的组合</div>
+                </div> 
+          
+                
+                    <div class="text_info clearfix"><span>所属门店：</span></div>
+                    <div class="input_info">
+                        <select name="store_id" disabled>
+                            <!--分类-->
+                            <volist name="store" id="vo">
+                                <option value="{$vo.id}" 
+                            <php>if($info['store_id']==$vo['id']){ echo 'selected'; }</php>        
+                                
+                                >{$vo.name}</option>
+                            </volist>
+                            
+                        </select>  
+                        <!--<input type="button" value="增加" class="btn_add" onclick="location.href='{:U('Brand/add')}';" />-->
+                    </div>  
+                    
+                
+                <div class="text_info clearfix"><span>单价：</span></div>
+                <div class="input_info">
+                    <input type="text" class="width110" name='price' value='{$info.price}' disabled/>
+                    <span class="required">元</span>
+                    <div class="validate_msg_medium">不能为空，且为20长度的字母、数字和汉字的组合</div>
+                </div>                 
+
+                <div class="text_info clearfix"><span>库存：</span></div>
+                <div class="input_info">
+                    <input type="text" class="width110" name='stock' value="{:array_sum( explode(',',$info['count']) ); }" disabled/>
+                    <span class="required">*</span>
+                    <div class="validate_msg_medium">不能为空，且为20长度的字母、数字和汉字的组合</div>
+                </div>   
+                
+                    <div class="text_info clearfix"><span>商品品牌：</span></div>
+                    <div class="input_info">
+                        <select name="brand_id" disabled>
+                            <!--品牌分类-->
+                            <volist name="brand" id="vo">
+                                <option value="{$vo.id}" 
+                            <php>if($info['brand_id']==$vo['id']){ echo 'selected'; }</php>        
+                                >{$vo.name}</option>
+                            </volist>
+                            
+                        </select>  
+                    </div>                
+                
+
+                                    
+                <div class="text_info clearfix"><span>商品类型：</span></div>
+                <div class="input_info" id="as">
+  
+                        <select name="category_id" id="category_id" onchange="get_attr(this)" disabled> 
+<!--遍历类型-->                            
+<volist name='category' id='vo'>
+                            <option value="{$vo.id}" 
+                              <php>if($info['category_id']==$vo['id']){ echo 'selected'; }</php>            
+                            >{$vo.name}</option>
+</volist> 
+                        </select>  
+                    <span class="required">
+                    </span>
+                    <div class="validate_msg_tiny">至少选择一个类型</div>
+                </div>     
+                
+        </div>
+        <!--主要区域结束-->
+   
+        
+
+<script type="text/javascript">
+    $(function(){
+        //点击之后的图标
+        $('.warehouse_off').addClass('warehouse_on').removeClass('warehouse_off');
+    });  
+</script>
+
+
+
+<script type="text/javascript">
+ $(function(){
+     $('#category_id').change();
+     
+ }); 
+  
+  
+  
+ function get_attr(obj){
+    //判断选中的类型
+    var isa=jQuery("#category_id  option:selected").val();
+    var attrbute_id="{$info.attrbute_id}".split(",");
+//    var attrbute_value="{$info.attrbute_value}".split(",");
+    
+    //删除原来的
+    $('.afters').remove();
+
+    $.get('__CONTROLLER__/get_attr/id/'+isa, function(data){
+//              console.log(data);
+        
+        //第一层遍历      
+        $.each( data, function(index, value)
+          { 
+            content = (value.content).split(",");
+//            console.log(value.id);
+     
+            //下拉框
+            var option='';
+            $.each( content, function(k, v)
+            { 
+                v=$.trim(v);
+ 
+                 if( value.type=='select' ){
+
+                    option+="<option value='"+v+"' >"+v+"</option>"
+                            
+                 }
+                
+            });
+            
+            //下拉框结束
+            if( value.type == 'select' ){
+                var str="<div class='text_info clearfix afters'><span>"+value.name+"：</span></div><div class='input_info afters'>  <select name='attrbute_id["+value.id+"]' class='get_content_"+value.id+"' disabled>"+ option +"</select>  <span class='required'></span><div class='validate_msg_tiny'>至少选择一个</div></div>    ";
+                $('#as').after(str);      
+                attr('select');
+
+            }else if(value.type == 'text'){
+                var str="<div class='text_info clearfix afters'><span>"+value.name+"：</span></div><div class='input_info afters'>  <input type='text' class='get_contents_"+value.id+" '  name='attrbute_id["+value.id+"]'  disabled/>  <span class='required'></span><div class='validate_msg_tiny'>至少选择一个类型</div></div>    ";
+                $('#as').after(str);
+                attr('text');
+            }else if(value.type == 'date'){
+                var str="<div class='text_info clearfix afters'><span>"+value.name+"：</span></div><div class='input_info afters'>  <input type='date' class='get_contents_"+value.id+" ' name='attrbute_id["+value.id+"]'  disabled/>  <span class='required'></span><div class='validate_msg_tiny'>请填写</div></div>    ";
+                $('#as').after(str);   
+                attr('date');
+            }       
+            
+        });
+        
+
+        
+        
+    });     
+//     layer.msg(isa);
+ }
+ 
+
+</script>
+
+<php>
+
+    $attrbute_id= array_values( array_filter( explode(",",$info['attrbute_id']) )  );
+    $attrbute_value= explode(",",$info['val']) ;
+
+    echo "<script type='text/javascript'> function attr(obj){ if(obj=='select'){  ";
+        
+      
+    foreach($attrbute_id as $k=>$v){
+        printf(" \$(\".get_content_%u  option[value='%s'] \").prop(\"selected\",true); \r\n",trim($v),trim($attrbute_value[$k]) );
+    }
+    
+    
+     
+    echo " }else{ ";
+            
+    foreach($attrbute_id as $k=>$v){
+        printf(" \$(\".get_contents_%u\").val(\"%s\"); ",trim($v),trim($attrbute_value[$k]) );
+    }
+    
+    echo " } }</script>";
+</php>
+

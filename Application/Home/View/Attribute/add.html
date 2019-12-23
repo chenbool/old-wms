@@ -1,0 +1,106 @@
+<layout name="Public/layout"/>     
+{:jumps($infos['authority'],CONTROLLER_NAME)}
+
+        <!--主要区域开始-->
+        <div id="main">            
+
+            <form action="__SELF__" method="post" class="main_form">
+                
+                <div class="text_info clearfix"><span>属性名称：</span></div>
+                <div class="input_info">
+                    <input type="text" class="width200" name="name" value=''/>
+                    <span class="required">*</span>
+                    <div class="validate_msg_medium">不能为空，且为20长度的字母、数字和汉字的组合</div>
+                </div>                    
+
+                <div class="text_info clearfix"><span>商品类型：</span></div>
+                <div class="input_info">
+  
+                        <select name="category_id">
+<!--遍历类型-->                            
+<volist name='category' id='vo'>
+                            <option value="{$vo.id}">{$vo.name}</option>
+</volist> 
+                        </select>  
+                    <span class="required">
+<input type="button" value="增加" class="btn_add" onclick="location.href='{:U('Category/add')}';" />
+                    </span>
+                    <div class="validate_msg_tiny">至少选择一个类型</div>
+                </div>                
+                          
+                
+                
+                    <div class="text_info clearfix"><span>按钮类型：</span></div>
+                    <div class="input_info">
+                        <select name="type">
+                            <option value="text">文本框</option>
+                            <option value="textarea">内容框</option>
+                            <option value="checkbox">多选框</option>
+                            <option value="radio">单选框</option>
+                            <option value="select">下拉框</option>
+                            <option value="number">数字框</option>
+                            <option value="range">滑动条</option>
+                            <option value="date">日期</option>
+                            <option value="time">时间</option>
+                            <option value="email">邮箱</option>
+                        </select>  
+                    </div>                  
+                
+                <div class="text_info clearfix"><span>内容：</span></div>
+                <div class="input_info_high">
+                    <textarea class="width300 height70" name='content'></textarea>
+                    <div class="validate_msg_short ">100长度的字母、数字、汉字和下划线的组合</div>
+                </div>                                               
+                
+                <div class="text_info clearfix"><span>备注：</span></div>
+                <div class="input_info_high">
+                    <textarea class="width300 height70" name='note'></textarea>
+                    <div class="validate_msg_short ">100长度的字母、数字、汉字和下划线的组合</div>
+                </div>  
+                
+                <div class="button_info clearfix">
+                    <input type="button" value="保存" class="btn_save" onclick="send()" />
+                    <input type="button" value="取消" class="btn_save" />
+                </div>
+            </form>
+        </div>
+        <!--主要区域结束-->
+
+        
+<script type="text/javascript">
+    function send(){
+
+                $.ajax({
+                    url: '__SELF__',
+                    type: 'post',
+                    dataType:'json',
+                    data: $(".main_form").serializeArray(),
+                    success: function(data) {
+
+                        //判断是否添加成功！
+                        if(data.status==0){
+                            layer.msg(data.info,{icon: 5});
+                        }else{
+                            layer.msg(data.info,{icon: 6});
+
+                            //延迟跳转
+                            setTimeout(function () {
+                                location.href = "{:U('Attribute/index')}";
+                            }, {:C('AJAX_TIME')});
+
+
+                        }
+
+                    }
+                });
+
+            
+    }
+</script>   
+<script type="text/javascript">
+    $(function(){
+        //点击之后的图标
+        $('.bill_off').addClass('bill_on').removeClass('bill_off');
+    }); 
+    
+</script>

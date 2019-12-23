@@ -1,0 +1,58 @@
+/**{
+    padding: 0px;
+    margin: 0px;
+}*/
+/*body{
+    line-height: 1.6;
+    font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","\9ED1\4F53",Arial,sans-serif;
+    color: #222;
+    font-size: 14px;
+	width:850px;
+	margin:40px auto;
+}*/
+/*li{list-style: none;margin-right:10px;}*/
+.div_contentlist li{
+    list-style: none;
+    margin-right:10px;
+}
+/*.li_width label{
+    padding-right:5px;
+}*/
+.Father_Title{
+    margin-top:2em; 
+}
+.div_title span{
+    font-weight:bold; 
+}
+
+.Father_Title li{
+    font-weight:bold; 
+}
+li label{cursor: pointer;}
+.Father_Item0 li{float: left;}
+.Father_Item1 li{float: left;}
+.Father_Item2 li{float: left;}
+.Father_Item3 li{float: left;}
+
+/*表格样式*/
+table#process {
+    font-size:11px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #666666;
+    border-collapse: collapse;
+}
+table#process th {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #dedede;
+}
+table#process td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #ffffff;
+}

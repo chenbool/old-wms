@@ -1,0 +1,1935 @@
+[ 2016-04-28T08:59:08+08:00 ] 127.0.0.1 /wmsos/index.php/Account/edit/id/13
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\UserModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\UserModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_user` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: limit D:\apache\htdocs\wmsos\Application\Home\Model\UserModel.class.php 第 82 行.
+SQL: SELECT COUNT(*) AS tp_count FROM wms_user a LEFT JOIN wms_userinfo as b on a.id=b.id LEFT JOIN wms_position as c on b.position=c.id LEFT JOIN wms_store as d on b.store_id=d.id  WHERE a.id = 13 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.*,b.*,c.id as position_id,c.name as position_name,d.name as store_name,d.id as store_id FROM wms_user a LEFT JOIN wms_userinfo as b on a.id=b.id LEFT JOIN wms_position as c on b.position=c.id LEFT JOIN wms_store as d on b.store_id=d.id  WHERE a.id = 13 ORDER BY a.id asc LIMIT 0,7   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wms_position` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `wms_position`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wms_store` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `wms_store`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wmsos\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: email D:\apache\htdocs\wmsos\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wmsos\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `wms_userinfo` [ RunTime:0.0030s ]
+SQL: UPDATE `wms_userinfo` SET `id`='13',`no`='2016',`store_id`='1',`tel`='18101565682',`email`='30024167@qq.com',`position`='2',`sex`='男',`address`='江苏省苏州市工业园区',`post`='267000',`qq`='30024167' WHERE `id` = 13 [ RunTime:0.0070s ]
+SQL: UPDATE `wms_user` SET `nickname`='布尔',`username`='bool',`status`='0' WHERE `id` = 13 [ RunTime:0.0156s ]
+
+[ 2016-04-28T09:29:51+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0000s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T09:45:53+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T09:48:26+08:00 ] 127.0.0.1 /wmsos/index.php/Attribute/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\AttributeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\AttributeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_attribute` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wmsos\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_attribute` WHERE `name` = '号码' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-04-28T09:49:33+08:00 ] 127.0.0.1 /wmsos/index.php/Attribute/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\AttributeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\AttributeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_attribute` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wmsos\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wmsos\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_attribute` (`name`,`type`,`content`,`note`,`time`) VALUES ('号码','select','XS,S,M,L,XL,XXL,XXXL','衣服尺寸','1461808173') [ RunTime:0.0624s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0000s ]
+SQL: INSERT INTO `wms_category_attribute` (`attribute_id`,`category_id`) VALUES ('32','2') [ RunTime:0.0156s ]
+
+[ 2016-04-28T10:19:58+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T10:21:09+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T10:21:35+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T10:21:39+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\CategoryModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\CategoryModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_category` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name` FROM `wms_category`  [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\BrandModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\BrandModel.class.php 第 69 行.
+SQL: SHOW COLUMNS FROM `wms_brand` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name` FROM `wms_brand`  [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 226 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wmsos\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wms_goods` WHERE `name` = '衣服' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wmsos\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_goods` (`sn`,`name`,`price`,`stock`,`brand_id`,`time`) VALUES ('111','衣服','180','120','1','1461810099') [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `wms_goods_category` [ RunTime:0.0000s ]
+SQL: INSERT INTO `wms_goods_category` (`goods_id`,`category_id`) VALUES ('3','2') [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `wms_goods_attrbute` [ RunTime:0.0000s ]
+SQL: INSERT INTO `wms_goods_attrbute` (`goods_id`,`attrbute_id`,`attrbute_value`) VALUES ('3','32',' M ') [ RunTime:0.0156s ]
+
+[ 2016-04-28T10:23:25+08:00 ] 127.0.0.1 /wmsos/index.php/user/user_info.html
+ERR: 无法加载控制器:User
+
+[ 2016-04-28T10:49:16+08:00 ] 127.0.0.1 /wmsos/index.php/Admin/Login.html
+ERR: 非法操作:Login
+
+[ 2016-04-28T11:03:37+08:00 ] 127.0.0.1 /wmsos/index.php/Admin/edit/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\AdminModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\AdminModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_admin` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_admin a WHERE a.id = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.*,GROUP_CONCAT(c.role_name) as role_name FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id  WHERE a.id = 1 GROUP BY b.admin_id ORDER BY a.id asc LIMIT 0,7   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Home\Model\RoleModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\RoleModel.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `wms_role` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`role_name` FROM `wms_role`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wmsos\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wmsos\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `wms_admin` SET `nickname`='布尔',`username`='bool',`password`='c506ff134babdd6e68ab3e6350e95305',`tel`='18101565685',`email`='30024167@qq.com' WHERE `id` = 1 [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `wms_admin_role` [ RunTime:0.0000s ]
+SQL: DELETE FROM `wms_admin_role` WHERE `admin_id` = 1 [ RunTime:0.0156s ]
+SQL: INSERT INTO `wms_admin_role` (`admin_id`,`role_id`) VALUES ('1','1') [ RunTime:0.0000s ]
+
+[ 2016-04-28T11:12:52+08:00 ] 127.0.0.1 /wmsos/index.php/Login/login
+ERR: 1054:Unknown column 'status' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`username`,`password`,`status` FROM `wms_admin` WHERE `username` = 'bool' LIMIT 1  
+
+[ 2016-04-28T13:21:57+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/detail/id/1
+ERR: 非法操作:detail
+
+[ 2016-04-28T13:22:30+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/detail/id/2
+ERR: 非法操作:detail
+
+[ 2016-04-28T13:22:34+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/detail/id/1
+ERR: 非法操作:detail
+
+[ 2016-04-28T13:22:38+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T13:24:00+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/detail/id/1
+ERR: 非法操作:detail
+
+[ 2016-04-28T13:26:52+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T13:27:35+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T13:27:45+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T13:27:58+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0050s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T13:28:40+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T13:29:23+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T13:29:43+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T13:30:25+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T13:30:36+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T13:30:46+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T13:31:08+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T13:31:09+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0050s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T13:31:13+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T13:31:23+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T13:31:29+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T13:31:45+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T13:31:56+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T13:32:44+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T13:32:48+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T13:36:12+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T14:48:07+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0060s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T15:12:24+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T15:12:46+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T15:15:18+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T15:15:21+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T15:17:06+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T15:22:45+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T15:32:33+08:00 ] 127.0.0.1 /wmsos/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wmsos\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T15:37:25+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T15:37:48+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T15:38:10+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T15:38:21+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T15:39:51+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T15:45:25+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0020s ]
+
+[ 2016-04-28T15:46:55+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0060s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T15:46:58+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T15:47:46+08:00 ] 127.0.0.1 /wms/index.php/Goods/Attribute
+ERR: 非法操作:Attribute
+
+[ 2016-04-28T15:47:59+08:00 ] 127.0.0.1 /wms/index.php/Attribute/edit/id/28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\AttributeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\AttributeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_attribute` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_attribute a WHERE a.id = 28 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.*,c.name as parent_name FROM wms_attribute a left join wms_category_attribute as b on a.id=b.attribute_id left join wms_category as c on b.category_id=c.id  WHERE a.id = 28 ORDER BY a.id asc LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `wms_attribute` SET `name`='号码',`type`='checkbox',`content`='34,35,36,37,38,39,40,41,42,43,44,45,46',`note`='鞋子号码' WHERE `id` = 28 [ RunTime:0.1248s ]
+
+[ 2016-04-28T15:48:15+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T15:48:20+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T15:48:23+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T15:49:01+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T15:50:54+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T15:50:57+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T15:55:23+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0020s ]
+
+[ 2016-04-28T16:02:33+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0050s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:03:18+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:04:20+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0060s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:04:25+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:04:27+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:05:50+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0060s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:06:34+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0060s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:06:45+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:07:01+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:09:54+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:10:17+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:10:28+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:10:59+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0050s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0020s ]
+
+[ 2016-04-28T16:11:27+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0050s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:12:11+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:13:42+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:13:46+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 3 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:13:47+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 4 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:13:49+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 5 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:13:51+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 6 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:13:52+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/8
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 8 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:13:55+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:13:58+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:14:21+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:14:23+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:14:27+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0000s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 3 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:14:28+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0000s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:14:31+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0050s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:14:40+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0020s ]
+
+[ 2016-04-28T16:14:57+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 3 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:15:12+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:15:13+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:15:15+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 3 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:15:17+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 5 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:15:18+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:15:56+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:16:09+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0156s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:16:12+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 3 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:16:13+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:16:15+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 4 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:16:16+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 6 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:16:18+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/8
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 8 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:16:19+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0000s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:16:25+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:16:35+08:00 ] 127.0.0.1 /wms/index.php/Attribute/edit/id/32
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\AttributeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\AttributeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_attribute` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_attribute a WHERE a.id = 32 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.*,c.name as parent_name FROM wms_attribute a left join wms_category_attribute as b on a.id=b.attribute_id left join wms_category as c on b.category_id=c.id  WHERE a.id = 32 ORDER BY a.id asc LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `wms_attribute` SET `name`='号码',`type`='checkbox',`content`='XS,S,M,L,XL,XXL,XXXL',`note`='衣服尺寸' WHERE `id` = 32 [ RunTime:0.0468s ]
+
+[ 2016-04-28T16:16:39+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:16:41+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:18:28+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:18:33+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:18:34+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0000s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:18:37+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:20:00+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:20:05+08:00 ] 127.0.0.1 /wms/index.php/Attribute/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\AttributeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\AttributeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_attribute` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_attribute` (`name`,`type`,`content`,`note`,`time`) VALUES ('颜色','checkbox','白色,黑色,蓝色,绿色,紫色,红色,天蓝色','衣服','1461831605') [ RunTime:0.1906s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0156s ]
+SQL: INSERT INTO `wms_category_attribute` (`attribute_id`,`category_id`) VALUES ('33','2') [ RunTime:0.0312s ]
+
+[ 2016-04-28T16:20:09+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:20:11+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:21:40+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:21:42+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:24:22+08:00 ] 127.0.0.1 /wms/index.php/Attribute/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\AttributeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\AttributeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_attribute` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_attribute` (`name`,`type`,`content`,`note`,`time`) VALUES ('季节','select','春秋,夏季，冬季','鞋子季节','1461831862') [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: INSERT INTO `wms_category_attribute` (`attribute_id`,`category_id`) VALUES ('34','1') [ RunTime:0.0110s ]
+
+[ 2016-04-28T16:24:28+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:24:42+08:00 ] 127.0.0.1 /wms/index.php/Attribute/edit/id/34
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\AttributeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\AttributeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_attribute` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wms_attribute a WHERE a.id = 34 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.*,c.name as parent_name FROM wms_attribute a left join wms_category_attribute as b on a.id=b.attribute_id left join wms_category as c on b.category_id=c.id  WHERE a.id = 34 ORDER BY a.id asc LIMIT 0,10   [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `wms_attribute` SET `name`='季节',`type`='select',`content`='春秋,夏季,冬季',`note`='鞋子季节' WHERE `id` = 34 [ RunTime:0.2028s ]
+
+[ 2016-04-28T16:24:45+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:26:34+08:00 ] 127.0.0.1 /wms/index.php/Attribute/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\AttributeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\AttributeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_attribute` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_attribute` (`name`,`type`,`content`,`note`,`time`) VALUES ('材质','text','','鞋子的材质','1461831994') [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0000s ]
+SQL: INSERT INTO `wms_category_attribute` (`attribute_id`,`category_id`) VALUES ('35','1') [ RunTime:0.0156s ]
+
+[ 2016-04-28T16:26:41+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:26:53+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:26:55+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:28:07+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:32:15+08:00 ] 127.0.0.1 /wms/index.php/Attribute/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\AttributeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\AttributeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_attribute` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_attribute` (`name`,`type`,`content`,`note`,`time`) VALUES ('款式','select','商务,休闲,运动,韩版,英伦','鞋子款式','1461832335') [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0000s ]
+SQL: INSERT INTO `wms_category_attribute` (`attribute_id`,`category_id`) VALUES ('36','1') [ RunTime:0.0156s ]
+
+[ 2016-04-28T16:32:18+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:32:33+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:35:10+08:00 ] 127.0.0.1 /wms/index.php/Attribute/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\AttributeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\AttributeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_attribute` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_attribute` (`name`,`type`,`content`,`note`,`time`) VALUES ('适用对象','select','儿童(6-18),青年(18-25周岁),中年(26-40),中老年(40-50),老年(50以上)','鞋子适用对象','1461832510') [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0000s ]
+SQL: INSERT INTO `wms_category_attribute` (`attribute_id`,`category_id`) VALUES ('37','1') [ RunTime:0.0156s ]
+
+[ 2016-04-28T16:35:24+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:38:36+08:00 ] 127.0.0.1 /wms/index.php/Attribute/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\AttributeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\AttributeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_attribute` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_attribute` (`name`,`type`,`content`,`note`,`time`) VALUES ('闭合方式','select','系带,拉链','鞋子闭合方式','1461832716') [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0000s ]
+SQL: INSERT INTO `wms_category_attribute` (`attribute_id`,`category_id`) VALUES ('38','1') [ RunTime:0.0156s ]
+
+[ 2016-04-28T16:38:46+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:40:01+08:00 ] 127.0.0.1 /wms/index.php/Attribute/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\AttributeModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\AttributeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_attribute` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\apache\htdocs\wms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wms_attribute` (`name`,`type`,`content`,`note`,`time`) VALUES ('鞋跟','select','平底,中跟,高跟,内增高','鞋子鞋跟样式','1461832801') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0000s ]
+SQL: INSERT INTO `wms_category_attribute` (`attribute_id`,`category_id`) VALUES ('39','1') [ RunTime:0.0312s ]
+
+[ 2016-04-28T16:40:10+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:43:20+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:43:24+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:43:27+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:43:31+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:45:37+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 3 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:45:39+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:56:45+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:57:55+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T16:59:15+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0050s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T16:59:56+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:00:02+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 4 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:00:03+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0186s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T17:00:05+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T17:00:12+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T17:00:14+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T17:00:16+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 4 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T17:00:18+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0000s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T17:00:37+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:02:51+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:02:53+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:03:23+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T17:03:24+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:04:29+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:04:52+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:05:10+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T17:06:30+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0050s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:07:25+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0050s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:07:28+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0050s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:11:09+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:11:31+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T17:13:05+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0060s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:14:35+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:16:10+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0080s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T17:20:25+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:20:40+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:21:28+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0070s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:22:09+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0050s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T17:23:08+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:23:38+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:23:59+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0050s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:24:25+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T17:25:32+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0050s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:26:10+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:26:36+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:26:44+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T17:27:06+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T17:27:12+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T17:27:14+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 3 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T17:27:23+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:27:33+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0050s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:27:43+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T17:28:01+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0050s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:28:25+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:28:39+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:28:48+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0050s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T17:29:07+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0050s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:29:35+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T17:29:50+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:30:11+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:31:54+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:31:56+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:32:00+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T17:32:07+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 3 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:32:09+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T17:32:46+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:32:54+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T17:32:56+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:33:30+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 2 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:33:33+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 3 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T17:33:35+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0020s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:34:50+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0000s ]
+
+[ 2016-04-28T17:36:18+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0020s ]
+
+[ 2016-04-28T17:37:13+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:37:54+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+
+[ 2016-04-28T17:38:54+08:00 ] 127.0.0.1 /wms/index.php/Goods/get_attr/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::_after_delete() should be compatible with Think\Model::_after_delete($data, $options) D:\apache\htdocs\wms\Application\Home\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wms_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wms_category_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.name,b.type,b.content FROM wms_category_attribute a LEFT JOIN wms_attribute as b on a.attribute_id=b.id  WHERE a.category_id = 1 GROUP BY a.attribute_id  [ RunTime:0.0010s ]
+

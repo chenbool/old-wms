@@ -1,0 +1,65 @@
+<layout name="Public/layout"/>     
+
+        <div id="main">      
+            <form action="__SELF__" method="post" class="main_form">
+                
+                <input type="hidden" name="id" value="{$infos.user_id}"/>
+                
+                <div class="text_info clearfix"><span>旧密码：</span></div>
+                <div class="input_info">
+                    <input type="password" class="width200" name="old_password" /><span class="required">*</span>
+                    <div class="validate_msg_medium">30长度以内的字母、数字和下划线的组合</div>
+                </div>
+                <div class="text_info clearfix"><span>新密码：</span></div>
+                <div class="input_info">
+                    <input type="password"  class="width200" name="password"/><span class="required">*</span>
+                    <div class="validate_msg_medium">30长度以内的字母、数字和下划线的组合</div>
+                </div>
+                <div class="text_info clearfix"><span>重复新密码：</span></div>
+                <div class="input_info">
+                    <input type="password" class="width200"  name="confirm_password"/><span class="required">*</span>
+                    <div class="validate_msg_medium">两次新密码必须相同</div>
+                </div>
+                <div class="button_info clearfix">
+                    <input type="button" value="保存" class="btn_save" onclick="send()" />
+                    <input type="button" value="取消" class="btn_save" />
+                </div>
+            </form>  
+        </div>
+        <!--主要区域结束-->
+<script type="text/javascript">
+    $(function(){
+        //点击之后的图标
+        $('.password_off').addClass('password_on').removeClass('password_off');
+    });  
+</script>
+<script type="text/javascript">
+function send(){
+
+                $.ajax({
+                    url: '__SELF__',
+                    type: 'post',
+                    dataType:'json',
+                    data: $(".main_form").serializeArray(),
+                    success: function(data) {
+
+                        //判断是否修改成功！
+                        if(data.status==0){
+                            layer.msg(data.info,{icon: 5});
+                        }else{
+                            layer.msg(data.info,{icon: 6});
+
+                            //延迟跳转
+                            setTimeout(function () {
+                                location.href = "{:U('Login/admin')}";
+                            }, {:C('AJAX_TIME')});
+
+
+                        }
+
+                    }
+                });
+
+            
+}
+</script>

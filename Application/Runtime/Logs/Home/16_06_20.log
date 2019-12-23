@@ -1,0 +1,28 @@
+[ 2016-06-20T08:32:30+08:00 ] ::1 /wms/index.php/Index/index.html
+ERR: 1054:Champ 'c.role_name' inconnu dans field list
+ [ SQL语句 ] : SELECT a.*,a.id as user_id,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,e.id as privliege_id,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '1' GROUP BY b.admin_id LIMIT 1  
+
+[ 2016-06-20T08:32:44+08:00 ] ::1 /wms/index.php/Index/index.html
+ERR: 1054:Champ 'c.role_name' inconnu dans field list
+ [ SQL语句 ] : SELECT a.*,a.id as user_id,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,e.id as privliege_id,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '1' GROUP BY b.admin_id LIMIT 1  
+
+[ 2016-06-20T08:32:45+08:00 ] ::1 /wms/index.php/Index/index.html
+ERR: 1054:Champ 'c.role_name' inconnu dans field list
+ [ SQL语句 ] : SELECT a.*,a.id as user_id,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,e.id as privliege_id,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '1' GROUP BY b.admin_id LIMIT 1  
+
+[ 2016-06-20T08:32:46+08:00 ] ::1 /wms/index.php/Index/index.html
+ERR: 1054:Champ 'c.role_name' inconnu dans field list
+ [ SQL语句 ] : SELECT a.*,a.id as user_id,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,e.id as privliege_id,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '1' GROUP BY b.admin_id LIMIT 1  
+
+[ 2016-06-20T08:34:04+08:00 ] ::1 /wms/index.php/Index/index.html
+ERR: 1054:Champ 'c.role_name' inconnu dans field list
+ [ SQL语句 ] : SELECT a.*,a.id as user_id,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,e.id as privliege_id,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '1' GROUP BY b.admin_id LIMIT 1  
+
+[ 2016-06-20T08:34:05+08:00 ] ::1 /wms/index.php/Index/index.html
+ERR: 1054:Champ 'c.role_name' inconnu dans field list
+ [ SQL语句 ] : SELECT a.*,a.id as user_id,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,e.id as privliege_id,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '1' GROUP BY b.admin_id LIMIT 1  
+
+[ 2016-06-20T08:34:05+08:00 ] ::1 /wms/index.php/Index/index.html
+ERR: 1054:Champ 'c.role_name' inconnu dans field list
+ [ SQL语句 ] : SELECT a.*,a.id as user_id,GROUP_CONCAT(DISTINCT c.role_name) as role_name,e.*,e.id as privliege_id,GROUP_CONCAT(DISTINCT e.controller) as authority FROM wms_admin a LEFT JOIN wms_admin_role as b on a.id=b.admin_id LEFT JOIN wms_role as c on c.id=b.role_id LEFT JOIN wms_role_privilege as d on c.id=d.role_id LEFT JOIN wms_privilege as e on d.privliege_id=e.id  WHERE a.id = '1' GROUP BY b.admin_id LIMIT 1  
+

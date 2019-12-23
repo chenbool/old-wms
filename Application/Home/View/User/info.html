@@ -1,0 +1,88 @@
+<layout name="Public/layout"/>     
+        
+
+        <!--主要区域开始-->
+        <div id="main">            
+
+            <form action="__SELF__" method="post" class="main_form">
+                <div class="text_info clearfix"><span>ID：</span></div>
+                <div class="input_info"><input type="text" readonly="readonly" class="readonly" name="id" value="{$infos.user_id}" /></div>
+                
+                <div class="text_info clearfix"><span>用户账号：</span></div>
+                <div class="input_info"><input type="text" readonly="readonly" class="readonly" value="{$infos.username}" /></div>
+                
+                <div class="text_info clearfix"><span>姓名：</span></div>
+                <div class="input_info">
+                    <input type="text" value="{$infos.nickname}" name="nickname" />
+                    <span class="required">*</span>
+                    <div class="validate_msg_long">20长度以内的汉字、字母的组合</div>
+                </div>
+                <div class="text_info clearfix"><span>角色：</span></div>
+                <div class="input_info">
+                    <input type="text" readonly="readonly" class="readonly width400" value="{$infos.role_name}" />
+                </div>
+<!--                <div class="text_info clearfix"><span>款式：</span></div>
+                <div class="input_info">
+                    <select disabled>
+                        <option>职员</option>
+                        <option>店长</option>
+                    </select>                        
+                </div>-->
+                <div class="text_info clearfix"><span>电话：</span></div>
+                <div class="input_info">
+                    <input type="text" class="width200" value="{$infos.tel}" name="tel"/>
+                    <span class="required">*</span>
+                    <div class="validate_msg_medium">电话号码格式：手机或固话</div>
+                </div>
+                <div class="text_info clearfix"><span>Email：</span></div>
+                <div class="input_info">
+                    <input type="text" class="width200" value="{$infos.email}" name="email"/>
+                    <span class="required">*</span>
+                    <div class="validate_msg_medium">50长度以内，符合 email 格式</div>
+                </div>
+                <div class="text_info clearfix"><span>创建时间：</span></div>
+                <div class="input_info"><input type="text" readonly="readonly" class="readonly" value="{:date('Y-m-d H:i:s',$infos['create_time'])}"/></div>
+                <div class="button_info clearfix">
+                    <input type="button" value="保存" class="btn_save" onclick="send()" />
+                    <input type="button" value="取消" class="btn_save" />
+                </div>
+            </form>  
+        </div>
+        <!--主要区域结束-->
+
+<script type="text/javascript">
+    $(function(){
+        //点击之后的图标
+        $('.information_off').addClass('information_on').removeClass('information_off');
+    });  
+</script>
+<script type="text/javascript">
+function send(){
+
+                $.ajax({
+                    url: '__SELF__',
+                    type: 'post',
+                    dataType:'json',
+                    data: $(".main_form").serializeArray(),
+                    success: function(data) {
+
+                        //判断是否修改成功！
+                        if(data.status==0){
+                            layer.msg(data.info,{icon: 5});
+                        }else{
+                            layer.msg(data.info,{icon: 6});
+
+                            //延迟跳转
+                            setTimeout(function () {
+                                location.href = "{:U('User/info')}";
+                            }, {:C('AJAX_TIME')});
+
+
+                        }
+
+                    }
+                });
+
+            
+}
+</script>
