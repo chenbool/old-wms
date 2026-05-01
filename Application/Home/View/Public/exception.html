@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>系统异常 - WMS-仓储管理系统</title>
+    <link type="text/css" rel="stylesheet" media="all" href="__PUBLIC__/styles/global.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="__PUBLIC__/styles/global_color.css" />
+    <style type="text/css">
+        body {
+            background: url('__PUBLIC__/images/login_bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Tahoma, Geneva, sans-serif;
+            font-size: 12px;
+        }
+        .exception_box {
+            width: 700px;
+            margin: 100px auto 0;
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 30px;
+        }
+        .exception_box h1 {
+            color: #d9534f;
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: normal;
+            text-align: center;
+        }
+        .exception_msg {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .exception_msg h3 {
+            color: #333;
+            font-size: 12px;
+            margin: 0 0 10px;
+            font-weight: bold;
+        }
+        .exception_msg p {
+            color: #666;
+            font-size: 12px;
+            margin: 0;
+            line-height: 1.6;
+            word-break: break-all;
+        }
+        .exception_trace {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            padding: 15px;
+            margin-bottom: 20px;
+            max-height: 300px;
+            overflow: auto;
+        }
+        .exception_trace h3 {
+            color: #333;
+            font-size: 12px;
+            margin: 0 0 10px;
+            font-weight: bold;
+        }
+        .exception_trace pre {
+            color: #666;
+            font-size: 11px;
+            line-height: 1.6;
+            margin: 0;
+            font-family: Consolas, Monaco, monospace;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+        .exception_action {
+            text-align: center;
+            margin-top: 25px;
+        }
+        .exception_action a {
+            color: #0063a0;
+            text-decoration: underline;
+            font-size: 12px;
+            margin: 0 10px;
+        }
+        .exception_action a:hover {
+            color: #004d7a;
+        }
+    </style>
+</head>
+<body>
+    <div class="exception_box">
+        <h1>系统发生错误</h1>
+        
+        <div class="exception_msg">
+            <h3>错误信息</h3>
+            <p><?php echo strip_tags($e['message']);?></p>
+        </div>
+        
+        <div class="exception_msg">
+            <h3>错误位置</h3>
+            <p>FILE: <?php echo $e['file'];?> &#12288;LINE: <?php echo $e['line'];?></p>
+        </div>
+        
+        <?php if(isset($e['trace'])) { ?>
+        <div class="exception_trace">
+            <h3>TRACE</h3>
+            <pre><?php echo nl2br($e['trace']);?></pre>
+        </div>
+        <?php } ?>
+        
+        <div class="exception_action">
+            <a href="javascript:location.reload();">刷新页面</a>
+            <a href="javascript:history.back();">返回上一页</a>
+            <a href="{:U('Index/index')}">返回首页</a>
+        </div>
+    </div>
+</body>
+</html>

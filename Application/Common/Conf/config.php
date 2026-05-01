@@ -3,12 +3,17 @@ return array(
 	//'配置项'=>'配置值'
     'SHOW_PAGE_TRACE'=>1,    //显示调试信息
 
+    //自定义跳转模板 - 与系统风格统一
+    'TMPL_ACTION_ERROR'     => APP_PATH.'Home/View/Public/error.html',
+    'TMPL_ACTION_SUCCESS'   => APP_PATH.'Home/View/Public/success.html',
+    'TMPL_EXCEPTION_FILE'   => APP_PATH.'Home/View/Public/exception.html',
+
     //数据库配置信息
    'DB_TYPE'   => 'mysql', // 数据库类型
    'DB_HOST'   => 'localhost', // 服务器地址
-   'DB_NAME'   => 'wms', // 数据库名
+   'DB_NAME'   => 'wms2016', // 数据库名
    'DB_USER'   => 'root', // 用户名
-   'DB_PWD'    => '', // 密码
+   'DB_PWD'    => 'root', // 密码
    'DB_PORT'   => 3306, // 端口
    'DB_PARAMS' =>  array(), // 数据库连接参数
    'DB_PREFIX' => 'wms_', // 数据库表前缀 

@@ -3,16 +3,16 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>WMS-仓储管理系统</title>
-        <link type="text/css" rel="stylesheet" media="all" href="/wms/Public/styles/global.css" />
-        <link type="text/css" rel="stylesheet" media="all" href="/wms/Public/styles/global_color.css" /> 
-        <script src="/wms/Public/js/jquery-1.9.1.min.js"></script>
-        <script src="/wms/Public/layer/layer.js"></script>
-        <script src="/wms/Public/js/user.js"></script>
+        <link type="text/css" rel="stylesheet" media="all" href="/Public/styles/global.css" />
+        <link type="text/css" rel="stylesheet" media="all" href="/Public/styles/global_color.css" /> 
+        <script src="/Public/js/jquery-1.9.1.min.js"></script>
+        <script src="/Public/layer/layer.js"></script>
+        <script src="/Public/js/user.js"></script>
     </head>
     <body>
         <!--Logo区域开始-->
         <div id="header">
-            <img src="/wms/Public/images/logo.png" alt="logo" class="left"/>
+            <img src="/Public/images/logo.png" alt="logo" class="left"/>
             <span style="font-weight:bold;">Hi!</span>  
             <span style="color:white;font-weight:bold;"><?php echo ($infos["nickname"]); ?></span> 
             <a href="<?php echo U('Login/loginout');?>" >[退出]</a>            
@@ -42,7 +42,7 @@
         <!--主要区域开始-->
         <div id="main">
             
-<!--            <form action="/wms/index.php/Sell/index.html" method="get" id="search">
+<!--            <form action="/index.php/Sell/index.html" method="get" id="search">
                 查询
                 <div class="search_add">                        
                     <div>货号：<input type="text" class="width100 text_search"  value="<?php echo I('get.sn');?>" name='sn'/></div>
@@ -67,7 +67,7 @@
                 </div>  
             </form>    -->
                 
-            <form action="/wms/index.php/Sell/index.html" method="get" id="search">
+            <form action="/index.php/Sell/index.html" method="get" id="search">
                 
                 <!--查询-->
                 <div class="search_add">                        
@@ -98,7 +98,7 @@
 </div>
                     
                     
-                    <input type="button" value="销售记录" class="btn_add" onclick="location.href='/wms/index.php/Sell/record';" />
+                    <input type="button" value="销售记录" class="btn_add" onclick="location.href='/index.php/Sell/record';" />
                     
                     <div style='margin:5px 0;display:block; '>
                         <div>
@@ -154,7 +154,7 @@
                         <td><?php echo ($vo["category_name"]); ?></td>
                         <td><?php echo array_sum( explode(',',$vo['count']) ); ;?></td>
                         <td><?php echo ($vo["price"]); ?></td>                   
-                        <td><a href="/wms/index.php/Sell/item/id/<?php echo ($vo["id"]); ?>" title="账单明细">明细</a></td>
+                        <td><a href="/index.php/Sell/item/id/<?php echo ($vo["id"]); ?>" title="账单明细">明细</a></td>
                     </tr><?php endforeach; endif; else: echo "$empty" ;endif; ?>                     
 
                 </table>
@@ -216,8 +216,8 @@
 
 
         <div id="footer">
-            <p>[ 源自技昂，专注WMS，TMS，POD的解决方案 ]</p>
-            <p>版权所有(C)苏州技昂信息技术有限公司 </p>
+            <p>[ 源自bool，专注WMS，TMS，POD的解决方案 ]</p>
+            <p>版权所有(C)bool设计 qq:30024167 </p>
         </div>
     </body>
 </html>

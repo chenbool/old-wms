@@ -3,16 +3,16 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>WMS-仓储管理系统</title>
-        <link type="text/css" rel="stylesheet" media="all" href="/wms/Public/styles/global.css" />
-        <link type="text/css" rel="stylesheet" media="all" href="/wms/Public/styles/global_color.css" /> 
-        <script src="/wms/Public/js/jquery-1.9.1.min.js"></script>
-        <script src="/wms/Public/layer/layer.js"></script>
-        <script src="/wms/Public/js/user.js"></script>
+        <link type="text/css" rel="stylesheet" media="all" href="/Public/styles/global.css" />
+        <link type="text/css" rel="stylesheet" media="all" href="/Public/styles/global_color.css" /> 
+        <script src="/Public/js/jquery-1.9.1.min.js"></script>
+        <script src="/Public/layer/layer.js"></script>
+        <script src="/Public/js/user.js"></script>
     </head>
     <body>
         <!--Logo区域开始-->
         <div id="header">
-            <img src="/wms/Public/images/logo.png" alt="logo" class="left"/>
+            <img src="/Public/images/logo.png" alt="logo" class="left"/>
             <span style="font-weight:bold;">Hi!</span>  
             <span style="color:white;font-weight:bold;"><?php echo ($infos["nickname"]); ?></span> 
             <a href="<?php echo U('Login/loginout');?>" >[退出]</a>            
@@ -57,7 +57,7 @@
                 
                 <!--删除的操作提示-->
                 <div id="operate_result_info" class="operate_success">
-                    <img src="/wms/Public/images/close.png" onclick="this.parentNode.style.display='none';" />
+                    <img src="/Public/images/close.png" onclick="this.parentNode.style.display='none';" />
                     删除成功！
                 </div> <!--删除错误！该角色被使用，不能删除。-->
                 
@@ -77,8 +77,8 @@
                             <td><?php echo ($vo["role_name"]); ?></td>
                             <td><?php echo ($vo["names"]); ?></td>
                             <td>
-                                <input type="button" value="修改" class="btn_modify" onclick="location.href='/wms/index.php/Role/edit/id/<?php echo ($vo["id"]); ?>';"/>
-                                <input type="button" value="删除" class="btn_delete" onclick="deletes('/wms/index.php/Role/delete/id/<?php echo ($vo["id"]); ?>'); " />
+                                <input type="button" value="修改" class="btn_modify" onclick="location.href='/index.php/Role/edit/id/<?php echo ($vo["id"]); ?>';"/>
+                                <input type="button" value="删除" class="btn_delete" onclick="deletes('/index.php/Role/delete/id/<?php echo ($vo["id"]); ?>'); " />
                             </td>
                         </tr><?php endforeach; endif; else: echo "$empty" ;endif; ?>    
 <!--遍历数据 end-->
@@ -136,8 +136,8 @@ function deletes(obj){
 
 
         <div id="footer">
-            <p>[ 源自技昂，专注WMS，TMS，POD的解决方案 ]</p>
-            <p>版权所有(C)苏州技昂信息技术有限公司 </p>
+            <p>[ 源自bool，专注WMS，TMS，POD的解决方案 ]</p>
+            <p>版权所有(C)bool设计 qq:30024167 </p>
         </div>
     </body>
 </html>

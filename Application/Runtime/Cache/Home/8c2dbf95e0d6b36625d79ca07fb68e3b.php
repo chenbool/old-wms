@@ -3,16 +3,16 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>WMS-仓储管理系统</title>
-        <link type="text/css" rel="stylesheet" media="all" href="/wms/Public/styles/global.css" />
-        <link type="text/css" rel="stylesheet" media="all" href="/wms/Public/styles/global_color.css" /> 
-        <script src="/wms/Public/js/jquery-1.9.1.min.js"></script>
-        <script src="/wms/Public/layer/layer.js"></script>
-        <script src="/wms/Public/js/user.js"></script>
+        <link type="text/css" rel="stylesheet" media="all" href="/Public/styles/global.css" />
+        <link type="text/css" rel="stylesheet" media="all" href="/Public/styles/global_color.css" /> 
+        <script src="/Public/js/jquery-1.9.1.min.js"></script>
+        <script src="/Public/layer/layer.js"></script>
+        <script src="/Public/js/user.js"></script>
     </head>
     <body>
         <!--Logo区域开始-->
         <div id="header">
-            <img src="/wms/Public/images/logo.png" alt="logo" class="left"/>
+            <img src="/Public/images/logo.png" alt="logo" class="left"/>
             <span style="font-weight:bold;">Hi!</span>  
             <span style="color:white;font-weight:bold;"><?php echo ($infos["nickname"]); ?></span> 
             <a href="<?php echo U('Login/loginout');?>" >[退出]</a>            
@@ -79,7 +79,7 @@
                         
 <?php if(is_array($res['res'])): $i = 0; $__LIST__ = $res['res'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
                             <td><?php echo ($vo["id"]); ?></td>
-                            <td><a href="/wms/index.php/Store/detail/id/<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></a></td>
+                            <td><a href="/index.php/Store/detail/id/<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></a></td>
                             <td><?php echo ($vo["leader"]); ?></td>
                             <td><?php echo ($vo["tel"]); ?></td>
                             <td><?php echo ($vo["address"]); ?></td>
@@ -90,11 +90,11 @@
    暂停<?php endif; ?> 
                             </td>
                             <td>  
-<?php if($vo['status'] == 0 ): ?><input type="button" value="暂停"  class="btn_pause" onclick="set_status( '/wms/index.php/Store/status/id/<?php echo ($vo["id"]); ?>/status/1' );" />
+<?php if($vo['status'] == 0 ): ?><input type="button" value="暂停"  class="btn_pause" onclick="set_status( '/index.php/Store/status/id/<?php echo ($vo["id"]); ?>/status/1' );" />
 <?php else: ?>
-    <input type="button" value="启用"  class="btn_start" onclick="set_status( '/wms/index.php/Store/status/id/<?php echo ($vo["id"]); ?>/status/0' );" /><?php endif; ?>   
-                                <input type="button" value="修改" class="btn_modify" onclick="location.href='/wms/index.php/Store/edit/id/<?php echo ($vo["id"]); ?>';" />
-                                <input type="button" value="删除" class="btn_delete" onclick="deletes('/wms/index.php/Store/delete/id/<?php echo ($vo["id"]); ?>');" />
+    <input type="button" value="启用"  class="btn_start" onclick="set_status( '/index.php/Store/status/id/<?php echo ($vo["id"]); ?>/status/0' );" /><?php endif; ?>   
+                                <input type="button" value="修改" class="btn_modify" onclick="location.href='/index.php/Store/edit/id/<?php echo ($vo["id"]); ?>';" />
+                                <input type="button" value="删除" class="btn_delete" onclick="deletes('/index.php/Store/delete/id/<?php echo ($vo["id"]); ?>');" />
                             </td>
                         </tr><?php endforeach; endif; else: echo "" ;endif; ?> 
                         
@@ -193,8 +193,8 @@
 
 
         <div id="footer">
-            <p>[ 源自技昂，专注WMS，TMS，POD的解决方案 ]</p>
-            <p>版权所有(C)苏州技昂信息技术有限公司 </p>
+            <p>[ 源自bool，专注WMS，TMS，POD的解决方案 ]</p>
+            <p>版权所有(C)bool设计 qq:30024167 </p>
         </div>
     </body>
 </html>

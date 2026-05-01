@@ -1,69 +1,246 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>WMS-仓储管理系统</title>
-        <link type="text/css" rel="stylesheet" media="all" href="__PUBLIC__/styles/global.css" />
-        <link type="text/css" rel="stylesheet" media="all" href="__PUBLIC__/styles/global_color.css" /> 
-        <script src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>WMS-仓储管理系统</title>
+    <link type="text/css" rel="stylesheet" media="all" href="__PUBLIC__/styles/global.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="__PUBLIC__/styles/global_color.css" />
+    <script src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
+    <style>
+        body.index {
+            background: url('__PUBLIC__/images/login_bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
         
-    </head>
-    <body class="index">
-        <div class="login_box">
-<form action="__CONTROLLER__/login" method="post" id="login">
-    <!-- <a href="__CONTROLLER__/admin">普通用户登陆</a> -->
+        /* 登录框样式 - 与系统风格统一 */
+        div.login_box {
+            width: 380px;
+            height: auto;
+            padding: 25px 30px;
+            margin: 120px auto 0;
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: 4px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            font-size: 12px;
+            font-weight: normal;
+        }
+        
+        /* 标题 */
+        .login_title {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #0063a0;
+        }
+        
+        .login_title h2 {
+            color: #0063a0;
+            font-size: 18px;
+            margin: 0;
+        }
+        
+        .login_title p {
+            color: #999;
+            font-size: 11px;
+            margin-top: 5px;
+        }
+        
+        /* 表单表格 */
+        div.login_box table {
+            width: 100%;
+        }
+        
+        div.login_box table tr td {
+            padding: 4px 2px;
+            height: 36px;
+            vertical-align: middle;
+        }
+        
+        td.login_info {
+            text-align: right;
+            width: 100px;
+            padding-right: 8px;
+            color: #333 !important;
+            font-weight: normal;
+        }
+        
+        td.login_input {
+            width: auto;
+        }
+        
+        td.login_input input[type="text"],
+        td.login_input input[type="password"] {
+            width: 200px;
+            height: 28px;
+            line-height: 28px;
+            padding: 0 8px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            font-size: 12px;
+            font-family: Tahoma, Geneva, sans-serif;
+            background: #fff;
+            color: #333;
+        }
+        
+        td.login_input input[type="text"]:focus,
+        td.login_input input[type="password"]:focus {
+            border-color: #0063a0;
+            outline: none;
+        }
+        
+        td.login_input input.width70 {
+            width: 100px;
+        }
+        
+        /* 验证码图片 */
+        #code {
+            width: 75px;
+            height: 28px;
+            cursor: pointer;
+            vertical-align: middle;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+        }
+        
+        /* 登录按钮 */
+        td.login_button {
+            text-align: center;
+            padding-top: 10px;
+        }
+        
+        td.login_button input[type="submit"] {
+            width: 100px;
+            height: 32px;
+            background: #0063a0;
+            color: #fff;
+            border: none;
+            border-radius: 2px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        td.login_button input[type="submit"]:hover {
+            background: #004d7a;
+        }
+        
+        /* 错误提示 */
+        .error_msg {
+            background: #fff5f5;
+            border: 1px solid #ffcaca;
+            color: #d9534f;
+            padding: 8px 12px;
+            margin-bottom: 15px;
+            border-radius: 2px;
+            font-size: 12px;
+            text-align: center;
+        }
+        
+        /* 底部信息 */
+        .login_footer {
+            text-align: center;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+        
+        .login_footer p {
+            color: #999;
+            font-size: 11px;
+            margin: 2px 0;
+        }
+    </style>
+</head>
+<body class="index">
+    <div class="login_box">
+        <!-- 标题 -->
+        <div class="login_title">
+            <h2>WMS 仓库管理系统</h2>
+            <p>Warehouse Management System</p>
+        </div>
+        
+        <!-- 错误提示 -->
+        <div class="error_msg" id="errorMsg" style="display:none;"></div>
+        
+        <!-- 登录表单 -->
+        <form action="__CONTROLLER__/login" method="post" id="loginForm">
             <table>
                 <tr>
                     <td class="login_info">账号：</td>
-                    <td colspan="2"><input name="username" type="text" class="width150" /></td>
-<!--                    <td class="login_error_info"><span class="required">30长度的字母、数字和下划线</span></td>-->
+                    <td class="login_input">
+                        <input type="text" name="username" placeholder="请输入用户名" autocomplete="off" />
+                    </td>
                 </tr>
                 <tr>
                     <td class="login_info">密码：</td>
-                    <td colspan="2"><input name="password" type="password" class="width150" /></td>
-<!--                    <td><span class="required">30长度的字母、数字和下划线</span></td>-->
+                    <td class="login_input">
+                        <input type="password" name="password" placeholder="请输入密码" />
+                    </td>
                 </tr>
                 <tr>
                     <td class="login_info">验证码：</td>
-                    <td class="width70"><input name="code" type="text" class="width70" /></td>
-                    <td><img src="__CONTROLLER__/code" alt="验证码" title="点击更换" id="code" onclick=""/></td>  
-<!--                    <td><span class="required">验证码错误</span></td>              -->
-                </tr>            
+                    <td class="login_input">
+                        <input type="text" name="code" class="width70" placeholder="验证码" />
+                        <img src="__CONTROLLER__/code" alt="验证码" title="点击更换" id="code" />
+                    </td>
+                </tr>
                 <tr>
-                    <td></td>
-                    <td class="login_button" colspan="2">
-                        <input type="submit" value="" />
-                    </td>    
-<!--                    <td><span class="required">用户名或密码错误，请重试</span></td>                -->
+                    <td colspan="2" class="login_button">
+                        <input type="submit" value="登 录" />
+                    </td>
                 </tr>
             </table>
-</form>    
-        </div>
-    </body>
-</html>
-<style type="text/css">
-    input[type='submit']{
-        background:url('__PUBLIC__/images/login_btn.png'); 
-        width: 124px;
-        height:41px;
-        border:none;
-    }
-    #code{
-        width: 70px;
-        height:30px;        
-    }
-</style>
-<script type="text/javascript">
-//    验证码
-    $( function(){
-	var checkVerify="__CONTROLLER__/code";
+        </form>
         
-	//点击图片切换验证码
-	$('#code').click(function(){
-            var verifyurl=$(this).attr('src');
-            //alert(verifyurl);
-            $(this).attr('src',verifyurl+'/'+Math.random()); 
+        <!-- 底部 -->
+        <div class="login_footer">
+            <p>© WMS 仓库管理系统</p>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        $(function() {
+            // 验证码点击刷新
+            $('#code').click(function() {
+                var src = $(this).attr('src');
+                $(this).attr('src', src + '/' + Math.random());
+            });
+            
+            // 表单验证
+            $('#loginForm').on('submit', function(e) {
+                var username = $('input[name="username"]').val().trim();
+                var password = $('input[name="password"]').val();
+                var code = $('input[name="code"]').val().trim();
+                
+                if (!username) {
+                    showError('请输入用户名');
+                    $('input[name="username"]').focus();
+                    return false;
+                }
+                
+                if (!password) {
+                    showError('请输入密码');
+                    $('input[name="password"]').focus();
+                    return false;
+                }
+                
+                if (!code) {
+                    showError('请输入验证码');
+                    $('input[name="code"]').focus();
+                    return false;
+                }
+                
+                return true;
+            });
+            
+            // 显示错误提示
+            function showError(msg) {
+                $('#errorMsg').text(msg).show();
+                setTimeout(function() {
+                    $('#errorMsg').hide();
+                }, 3000);
+            }
         });
-    } );
-
-</script>
+    </script>
+</body>
+</html>

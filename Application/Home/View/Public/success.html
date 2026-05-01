@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>权限不足 - WMS-仓储管理系统</title>
+    <title>操作成功 - WMS-仓储管理系统</title>
     <link type="text/css" rel="stylesheet" media="all" href="__PUBLIC__/styles/global.css" />
     <link type="text/css" rel="stylesheet" media="all" href="__PUBLIC__/styles/global_color.css" />
     <style type="text/css">
@@ -21,7 +21,7 @@
             text-align: center;
         }
         .jump_box h1 {
-            color: #f0ad4e;
+            color: #28a745;
             font-size: 48px;
             margin-bottom: 20px;
             font-weight: normal;
@@ -48,26 +48,26 @@
             font-size: 12px;
         }
         .jump_wait span {
-            color: #f0ad4e;
+            color: #0063a0;
             font-weight: bold;
         }
     </style>
 </head>
 <body>
     <div class="jump_box">
-        <h1>!</h1>
-        <p class="jump_msg">您无权访问此页面</p>
+        <h1>:)</h1>
+        <p class="jump_msg"><?php echo($message); ?></p>
         <p class="jump_action">
-            <a href="{:U('Index/index')}">立即返回</a>
+            <a href="<?php echo($jumpUrl); ?>">立即跳转</a>
         </p>
         <p class="jump_wait">
-            页面将在 <span id="wait">3</span> 秒后自动跳转
+            页面将在 <span id="wait"><?php echo($waitSecond); ?></span> 秒后自动跳转
         </p>
     </div>
     <script type="text/javascript">
         (function(){
             var wait = document.getElementById('wait');
-            var href = "{:U('Index/index')}";
+            var href = "<?php echo($jumpUrl); ?>";
             var interval = setInterval(function(){
                 var time = --wait.innerHTML;
                 if(time <= 0) {

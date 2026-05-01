@@ -1,0 +1,33 @@
+# ThinkPHP Runtime 目录（缓存、日志等临时文件）
+/Application/Runtime/
+
+# 编辑器配置文件
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 日志文件
+*.log
+
+# 临时文件
+temp/
+tmp/
+cache/
+
+# 上传文件目录（如果包含用户上传的文件）
+/Public/Uploads/
+
+# 配置文件（包含敏感信息）
+/Application/Common/Conf/config.php
+/Application/Home/Conf/config.php
+
+# 其他
+*.swp
+*.bak
+*.tmp

@@ -3,16 +3,16 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>WMS-仓储管理系统</title>
-        <link type="text/css" rel="stylesheet" media="all" href="/wms/Public/styles/global.css" />
-        <link type="text/css" rel="stylesheet" media="all" href="/wms/Public/styles/global_color.css" /> 
-        <script src="/wms/Public/js/jquery-1.9.1.min.js"></script>
-        <script src="/wms/Public/layer/layer.js"></script>
-        <script src="/wms/Public/js/user.js"></script>
+        <link type="text/css" rel="stylesheet" media="all" href="/Public/styles/global.css" />
+        <link type="text/css" rel="stylesheet" media="all" href="/Public/styles/global_color.css" /> 
+        <script src="/Public/js/jquery-1.9.1.min.js"></script>
+        <script src="/Public/layer/layer.js"></script>
+        <script src="/Public/js/user.js"></script>
     </head>
     <body>
         <!--Logo区域开始-->
         <div id="header">
-            <img src="/wms/Public/images/logo.png" alt="logo" class="left"/>
+            <img src="/Public/images/logo.png" alt="logo" class="left"/>
             <span style="font-weight:bold;">Hi!</span>  
             <span style="color:white;font-weight:bold;"><?php echo ($infos["nickname"]); ?></span> 
             <a href="<?php echo U('Login/loginout');?>" >[退出]</a>            
@@ -41,7 +41,7 @@
 
         <!--主要区域开始-->
         <div id="main">
-            <form action="/wms/index.php/Goods/index.html" method="get" id="search">
+            <form action="/index.php/Goods/index.html" method="get" id="search">
                 
                 <!--查询-->
                 <div class="search_add">                        
@@ -83,7 +83,7 @@
 </div>
                     
                     
-                    <input type="button" value="增加" class="btn_add" onclick="location.href='/wms/index.php/Goods/add';" />
+                    <input type="button" value="增加" class="btn_add" onclick="location.href='/index.php/Goods/add';" />
                     
                     <div style='margin:5px 0;display:block; '>
                         <div>
@@ -139,15 +139,15 @@
 <?php if(is_array($res['res'])): $i = 0; $__LIST__ = $res['res'];if( count($__LIST__)==0 ) : echo "$empty" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
                         <td><?php echo ($vo["id"]); ?></td>
                         <td><?php echo ($vo["sn"]); ?></td>
-                        <td><a href="/wms/index.php/Goods/detail/id/<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></a></td>
+                        <td><a href="/index.php/Goods/detail/id/<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></a></td>
                         <td><?php echo ($vo["brand_name"]); ?></td>
                         <td><?php echo ($vo["category_name"]); ?></td>
                         <td><?php echo array_sum( explode(',',$vo['count']) ); ;?></td>
                         <td><?php echo ($vo["price"]); ?></td>
                         <td><?php echo date('Y-m-d H:i:s',$vo['time']);?></td>                    
                         <td class="td_modi">                          
-                            <input type="button" value="修改" class="btn_modify" onclick=" location.href='/wms/index.php/Goods/edit/id/<?php echo ($vo["id"]); ?>'; " />
-                            <input type="button" value="删除" class="btn_delete" onclick=" deletes( '/wms/index.php/Goods/delete/id/<?php echo ($vo["id"]); ?>' ); " />                   
+                            <input type="button" value="修改" class="btn_modify" onclick=" location.href='/index.php/Goods/edit/id/<?php echo ($vo["id"]); ?>'; " />
+                            <input type="button" value="删除" class="btn_delete" onclick=" deletes( '/index.php/Goods/delete/id/<?php echo ($vo["id"]); ?>' ); " />                   
                         </td>
                     </tr><?php endforeach; endif; else: echo "$empty" ;endif; ?>   
 <!--遍历结束-->                    
@@ -302,8 +302,8 @@
 
 
         <div id="footer">
-            <p>[ 源自技昂，专注WMS，TMS，POD的解决方案 ]</p>
-            <p>版权所有(C)苏州技昂信息技术有限公司 </p>
+            <p>[ 源自bool，专注WMS，TMS，POD的解决方案 ]</p>
+            <p>版权所有(C)bool设计 qq:30024167 </p>
         </div>
     </body>
 </html>

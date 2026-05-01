@@ -3,8 +3,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>WMS-仓储管理系统</title>
-        <link type="text/css" rel="stylesheet" media="all" href="/wms/Public/styles/global.css" />
-        <link type="text/css" rel="stylesheet" media="all" href="/wms/Public/styles/global_color.css" /> 
+        <link type="text/css" rel="stylesheet" media="all" href="/Public/styles/global.css" />
+        <link type="text/css" rel="stylesheet" media="all" href="/Public/styles/global_color.css" /> 
     </head>
     <body class="index">
         <?php echo W('Menu/Menu');?> 

@@ -3,16 +3,16 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>WMS-仓储管理系统</title>
-        <link type="text/css" rel="stylesheet" media="all" href="/wms/Public/styles/global.css" />
-        <link type="text/css" rel="stylesheet" media="all" href="/wms/Public/styles/global_color.css" /> 
-        <script src="/wms/Public/js/jquery-1.9.1.min.js"></script>
-        <script src="/wms/Public/layer/layer.js"></script>
-        <script src="/wms/Public/js/user.js"></script>
+        <link type="text/css" rel="stylesheet" media="all" href="/Public/styles/global.css" />
+        <link type="text/css" rel="stylesheet" media="all" href="/Public/styles/global_color.css" /> 
+        <script src="/Public/js/jquery-1.9.1.min.js"></script>
+        <script src="/Public/layer/layer.js"></script>
+        <script src="/Public/js/user.js"></script>
     </head>
     <body>
         <!--Logo区域开始-->
         <div id="header">
-            <img src="/wms/Public/images/logo.png" alt="logo" class="left"/>
+            <img src="/Public/images/logo.png" alt="logo" class="left"/>
             <span style="font-weight:bold;">Hi!</span>  
             <span style="color:white;font-weight:bold;"><?php echo ($infos["nickname"]); ?></span> 
             <a href="<?php echo U('Login/loginout');?>" >[退出]</a>            
@@ -40,7 +40,7 @@
 <?php echo jumps($infos['authority'],CONTROLLER_NAME);?>
         <!--主要区域开始-->
         <div id="main">
-            <form action="/wms/index.php/Account/index.html" method="get" id="search">
+            <form action="/index.php/Account/index.html" method="get" id="search">
                 
                 <!--查询-->
                 <div class="search_add">                        
@@ -71,7 +71,7 @@
                         <input type="button" value="搜索" class="btn_search" id="btn_search" onclick="search()"/>
                     </div>
                     
-                    <input type="button" value="增加" class="btn_add" onclick="location.href='/wms/index.php/Account/add';" />
+                    <input type="button" value="增加" class="btn_add" onclick="location.href='/index.php/Account/add';" />
 <!--第二行-->
 <div style='margin:5px 0;'>
 
@@ -120,7 +120,7 @@
 <!--开始遍历数据--> 
 <?php if(is_array($res['res'])): $i = 0; $__LIST__ = $res['res'];if( count($__LIST__)==0 ) : echo "$empty" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
                         <td><?php echo ($vo["id"]); ?></td>
-                        <td><a href="/wms/index.php/Account/detail/id/<?php echo ($vo["id"]); ?>"><?php echo ($vo["nickname"]); ?></a></td>
+                        <td><a href="/index.php/Account/detail/id/<?php echo ($vo["id"]); ?>"><?php echo ($vo["nickname"]); ?></a></td>
                         <td><?php echo ($vo["no"]); ?></td>
                         <td><?php echo ($vo["username"]); ?></td>
                         <td>
@@ -128,17 +128,17 @@
                         </td>
 
                         <td>
-                            <a href="/wms/index.php/Account/index/position_name/<?php echo ($vo["position_name"]); ?>/"> <?php echo ($vo["position_name"]); ?> </a>
+                            <a href="/index.php/Account/index/position_name/<?php echo ($vo["position_name"]); ?>/"> <?php echo ($vo["position_name"]); ?> </a>
                         </td>   
                         <td><?php echo ($vo["store_name"]); ?></td>
                         <td><?php echo date('Y-m-d',$vo['create_time']);?></td>
                         <td class="td_modi">
-<?php if($vo['status'] != 2): if($vo['status'] == 0): ?><input type="button" value="禁止"  class="btn_pause" onclick="set_status( '/wms/index.php/Account/status/id/<?php echo ($vo["id"]); ?>/status/1' );" />
+<?php if($vo['status'] != 2): if($vo['status'] == 0): ?><input type="button" value="禁止"  class="btn_pause" onclick="set_status( '/index.php/Account/status/id/<?php echo ($vo["id"]); ?>/status/1' );" />
 <?php else: ?>
-    <input type="button" value="正常"  class="btn_start" onclick="set_status( '/wms/index.php/Account/status/id/<?php echo ($vo["id"]); ?>/status/0' );" /><?php endif; ?>                                   
+    <input type="button" value="正常"  class="btn_start" onclick="set_status( '/index.php/Account/status/id/<?php echo ($vo["id"]); ?>/status/0' );" /><?php endif; ?>                                   
                                    
-                            <input type="button" value="修改" class="btn_modify" onclick=" location.href='/wms/index.php/Account/edit/id/<?php echo ($vo["id"]); ?>'; " />
-                            <input type="button" value="删除" class="btn_delete" onclick=" deletes( '/wms/index.php/Account/delete/id/<?php echo ($vo["id"]); ?>' ); " />
+                            <input type="button" value="修改" class="btn_modify" onclick=" location.href='/index.php/Account/edit/id/<?php echo ($vo["id"]); ?>'; " />
+                            <input type="button" value="删除" class="btn_delete" onclick=" deletes( '/index.php/Account/delete/id/<?php echo ($vo["id"]); ?>' ); " />
 <?php else: endif; ?>                       
                         </td>
                     </tr><?php endforeach; endif; else: echo "$empty" ;endif; ?>   
@@ -284,8 +284,8 @@
 
 
         <div id="footer">
-            <p>[ 源自技昂，专注WMS，TMS，POD的解决方案 ]</p>
-            <p>版权所有(C)苏州技昂信息技术有限公司 </p>
+            <p>[ 源自bool，专注WMS，TMS，POD的解决方案 ]</p>
+            <p>版权所有(C)bool设计 qq:30024167 </p>
         </div>
     </body>
 </html>
